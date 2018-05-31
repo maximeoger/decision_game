@@ -1,0 +1,28 @@
+[
+    {
+      "id" : 1,
+      "background" : "",
+      "sounds" : "",
+      "time" : "7:00",
+      "situation" : [
+        "Le réveil sonne..",
+        "encore une journée de merde qui s'annonce ...",
+        "J'ai pas envie de me lever...",
+        "Je fais quoi ?"
+      ],
+      "choices" : {
+        "a" : "Je me lève, je suis un battant",
+        "b" : "Je reste au lit"
+      }
+    },
+
+    {
+      "id" : 2,
+      "background" : "",
+      "sounds" : "",
+      "time" : "10:00",
+      "situation" : [
+        "Bon je vais arriver en retard."
+      ]
+    }
+]
