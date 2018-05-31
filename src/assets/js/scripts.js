@@ -11,14 +11,15 @@ class Story {
       .then((response) => response.json())
       .then((data) => {
         let output = '<h2>story</h2>';
-        data.forEach(function(situations){
+        data.forEach(function(data){
           output += `
             <ul>
-                <li>id: ${id}</li>
-                <li>situation: ${situation}</li>
+                <li>id: ${data.id}</li>
+                <li>situation: ${data.situation[0]}</li>
             </ul>
           `;
-        })
+        });
+        document.querySelector('.output').innerHTML = output;
       })
   }
 }
