@@ -26,14 +26,6 @@ class Story {
 
   }
 
-  chooseA(){
-    alert('a');
-  }
-
-  chooseB(){
-    alert('b');
-  }
-
 }
 
 var story = new Story();
