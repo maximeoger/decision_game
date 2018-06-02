@@ -1,7 +1,6 @@
 [
     {
-      "id": 0,
-      "situation" : [
+      "text" : [
         "Je m'appelle Titouan et j'habite avec ma mère",
         "elle m'empèche de m'épanouir",
         "voiçi mon histoire"
@@ -9,10 +8,11 @@
     },
     {
       "id" : 1,
+      "resulting from" : 0,
       "background" : "",
       "sounds" : "",
       "time" : "7:00",
-      "situation" : [
+      "text" : [
         "Le réveil sonne..",
         "encore une journée de merde qui s'annonce ...",
         "J'ai pas envie de me lever...",
@@ -23,13 +23,13 @@
         "b" : "Je reste au lit"
       }
     },
-
     {
       "id" : 2,
+      "resulting from" : 3,
       "background" : "",
       "sounds" : "",
       "time" : "10:00",
-      "situation" : [
+      "text" : [
         "Bon je vais arriver en retard."
       ]
     }

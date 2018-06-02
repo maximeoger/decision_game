@@ -1,2 +1,12 @@
 body {
-  background: blue; }
+  background: #191919; }
+
+.Output {
+  color: #ffffff; }
+  .Output__btn {
+    color: #ffffff;
+    width: 226px;
+    height: 40px;
+    border-radius: 0;
+    border: solid 1px #666666;
+    background: none; }

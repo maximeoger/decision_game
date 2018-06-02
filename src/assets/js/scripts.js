@@ -1,31 +1,39 @@
 class Story {
 
   constructor() {
-    this.getData();
+   this.getData();
   }
-
+  
+  // appel fetch pour récupérer les données dans le story.json
   getData() {
-    document.querySelector('button').addEventListener('click', () => {
+    document.querySelector('.startBtn').addEventListener('click', () => {
       fetch('./src/assets/js/story.json')
         .then((response) => response.json())
-        .then((data) => {
-          this.init(data);
-        })
+        .then(function(data) {
+          this.render(data)
+        }.bind(this))
     })
   }
 
-  init(data) {
-    let output;
-    data.forEach(function(data){
-      output = `<p> ${data.situation[0]} </p>`;
-    });
-    document.querySelector('.output').innerHTML = output;
+  mainMenu() {
+    
   }
 
-  engine() {
-
+  // interprète les données récupérées dans getData et les affiche dans le dom
+  render(data) {
+    let output = document.querySelector('.Output');
+    let statement;
+    statement = `
+      <p> ${ data[0].text[0] } </p>
+    `;
+    output.innerHTML = statement;
+    document.querySelector('body').style.backgroundColor = data[0].color;
   }
 
+  // enregistre les conséquences des réponses à la fin de chaque situation
+  saveState() {
+
+  }
 }
 
 var story = new Story();
