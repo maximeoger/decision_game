@@ -1,9 +1,11 @@
 [
     {
       "text" : [
-        "Je m'appelle Titouan et j'habite avec ma mère",
-        "elle m'empèche de m'épanouir",
-        "voiçi mon histoire"
+        "Je m'appelle Titouan et je travaille pour la société slave computing",
+        "mon métier consiste à cliquer sur le même bouton, de la même boîte de dialogue toute la journée et sans interruption.",
+        "Je suis plutôt content de ma situation. Cela pourrait être pire",
+        "Je pourrait ne pas travailler et ne pas pouvoir gagner ma vie",
+        "Je me demande si je pourrais faire autre chose"
       ]
     },
     {
@@ -11,24 +13,20 @@
       "resulting from" : 0,
       "background" : "",
       "sounds" : "",
-      "time" : "7:00",
       "text" : [
-        "Le réveil sonne..",
-        "encore une journée de merde qui s'annonce ...",
-        "J'ai pas envie de me lever...",
+        "7:00 - Le réveil sonne..",
+        "il est temps de se lever pour aller travailler.",
         "Je fais quoi ?"
       ],
       "choices" : {
-        "a" : "Je me lève, je suis un battant",
-        "b" : "Je reste au lit"
+        "a" : "Je me lève",
+        "b" : "J'éteint mon réveil"
       }
     },
     {
       "id" : 2,
-      "resulting from" : 3,
       "background" : "",
       "sounds" : "",
-      "time" : "10:00",
       "text" : [
         "Bon je vais arriver en retard."
       ]
