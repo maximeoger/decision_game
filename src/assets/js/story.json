@@ -6,11 +6,11 @@
         "Je suis plutôt content de ma situation. Cela pourrait être pire",
         "Je pourrait ne pas travailler et ne pas pouvoir gagner ma vie",
         "Je me demande si je pourrais faire autre chose"
-      ]
+      ],
+      "next" : 1
     },
+    
     {
-      "id" : 1,
-      "resulting from" : 0,
       "background" : "",
       "sounds" : "",
       "text" : [
@@ -19,12 +19,26 @@
         "Je fais quoi ?"
       ],
       "choices" : {
-        "a" : "Je me lève",
-        "b" : "J'éteint mon réveil"
+        "a" : {
+          "label" : "Je me lève",
+          "next" : 2
+        },
+        "b" : {
+          "label" : "J'éteint mon réveil",
+          "next" : 3
+        }
       }
     },
+
     {
-      "id" : 2,
+      "background" : "",
+      "sounds" : "",
+      "text" : [
+        "Un petit café"
+      ]
+    },
+
+    {
       "background" : "",
       "sounds" : "",
       "text" : [
