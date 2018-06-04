@@ -43,12 +43,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0 auto; }
     .Svg__Container > img {
       width: 100%;
-      height: auto; }
+      height: auto;
+      filter: blur(0px); }
 
 .section {
-  position: fixed;
   color: white;
-  margin: 0px auto; }
+  margin: 200px auto; }
 
 .button--1, .button--1 .button__bg {
   background-color: white;
