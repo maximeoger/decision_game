@@ -26,3 +26,5 @@ class Story {
 
 var story = new Story('lol', 9)
 story.getData();
+
+console.log('coucou');
