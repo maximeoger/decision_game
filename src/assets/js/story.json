@@ -1,28 +1,69 @@
 [
     {
-      "id" : 1,
+      "text" : [
+        "Je m'appelle Titouan et je travaille pour la société slave computing",
+        "mon métier consiste à cliquer sur le même bouton, de la même boîte de dialogue toute la journée et sans interruption.",
+        "Je suis plutôt content de ma situation. Cela pourrait être pire",
+        "Je pourrait ne pas travailler et ne pas pouvoir gagner ma vie",
+        "Je me demande si je pourrais faire autre chose"
+      ],
+      "next" : 1
+    },
+  
+    {
       "background" : "",
       "sounds" : "",
-      "time" : "7:00",
-      "situation" : [
-        "Le réveil sonne..",
-        "encore une journée de merde qui s'annonce ...",
-        "J'ai pas envie de me lever...",
+      "text" : [
+        "7:00 - Le réveil sonne..",
+        "il est temps de se lever pour aller travailler.",
         "Je fais quoi ?"
       ],
       "choices" : {
-        "a" : "Je me lève, je suis un battant",
-        "b" : "Je reste au lit"
+        "a" : {
+          "label" : "Je me lève",
+          "next" : 2
+        },
+        "b" : {
+          "label" : "J'éteint mon réveil",
+          "next" : 3
+        }
       }
     },
 
     {
-      "id" : 2,
       "background" : "",
       "sounds" : "",
-      "time" : "10:00",
-      "situation" : [
-        "Bon je vais arriver en retard."
+      "text" : [
+        "Un petit café et c’est parti",
+        "Il fait beau dehors, je pourrais peut-être aller au travail à pieds ?"
+      ],
+      "choices" : {
+        "a" : {
+          "label" : "J’y vais à pieds",
+          "next" : 3
+        },
+        "b" : {
+          "label" : "Non je vais prendre le métro",
+          "next" : 4
+        }
+      }
+    },
+
+    {
+      "background" : "",
+      "sounds" : "",
+      "text" : [
+        "Oh non ! Je vais arriver en retard !",
+        "Je vais me faire allumer et je risque de perdre mon travail !",
+        "Il faut que je parte tout de suite !"
+      ]
+    },
+
+    {
+      "background" : "",
+      "sounds" : "",
+      "text" : [
+        "Bon je suis en retard"
       ]
     }
 ]
