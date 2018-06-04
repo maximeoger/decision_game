@@ -35,14 +35,16 @@ class Story {
     let statement;
     
     let timer = setInterval( () => {
-      statement = ` <p> ${ data[situation].text[cursor] } </p> `;
+      statement = ` <p class="Output__renderedText"> ${ data[situation].text[cursor] } </p> `;
       output.innerHTML += statement;
       if(cursor === data[situation].text.length - 1){
         clearInterval(timer);
         if( data[situation].choices ){
           output.innerHTML += `
+          <div class="Output__renderedChoicesBox">
             <button class="Output__btn" data-choice="a"> ${data[situation].choices.a.label} </button>
             <button class="Output__btn" data-choice="b"> ${data[situation].choices.b.label} </button>
+          </div>
           `;
           document.querySelector('.Output__btn[data-choice="a"]').addEventListener('click', () => {
             console.log(this)

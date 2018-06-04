@@ -9,7 +9,7 @@
       ],
       "next" : 1
     },
-    
+  
     {
       "background" : "",
       "sounds" : "",
@@ -34,7 +34,28 @@
       "background" : "",
       "sounds" : "",
       "text" : [
-        "Un petit café"
+        "Un petit café et c’est parti",
+        "Il fait beau dehors, je pourrais peut-être aller au travail à pieds ?"
+      ],
+      "choices" : {
+        "a" : {
+          "label" : "J’y vais à pieds",
+          "next" : 3
+        },
+        "b" : {
+          "label" : "Non je vais prendre le métro",
+          "next" : 4
+        }
+      }
+    },
+
+    {
+      "background" : "",
+      "sounds" : "",
+      "text" : [
+        "Oh non ! Je vais arriver en retard !",
+        "Je vais me faire allumer et je risque de perdre mon travail !",
+        "Il faut que je parte tout de suite !"
       ]
     },
 
@@ -42,7 +63,7 @@
       "background" : "",
       "sounds" : "",
       "text" : [
-        "Bon je vais arriver en retard."
+        "Bon je suis en retard"
       ]
     }
 ]
