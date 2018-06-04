@@ -1,3 +1,6 @@
+
+// ON INITIALISE LES PARAMETRES DES LIGNES
+
 ;(function(window) {
 
 	'use strict';
@@ -284,3 +287,60 @@
 	window.LineMaker = LineMaker;
 
 })(window);
+
+
+// LA ON MET LES CONDITIONS 3 LIGNES
+
+
+(function() {
+  var lineMaker = new LineMaker({
+    position: 'fixed',
+    lines: [{
+        top: 0,
+        left: '15%',
+        width: .8,
+        height: '100%',
+        color: '#7599E4',
+        hidden: true,
+        animation: {
+          duration: 1000,
+          easing: 'easeInOutSine',
+          delay: 20,
+          direction: 'TopBottom'
+        }
+      },
+      {
+        top: 0,
+        left: '85%',
+        width: .8,
+        height: '100%',
+        color: '#7599E4',
+        hidden: true,
+        animation: {
+          duration: 1000,
+          easing: 'easeInOutSine',
+          delay: 140,
+          direction: 'TopBottom'
+        }
+      },
+      {
+        top: '90vh',
+        left: 0,
+        width: '100%',
+        height: .8,
+        color: '#7599E4',
+        hidden: true,
+        animation: {
+          duration: 1000,
+          easing: 'easeInOutSine',
+          delay: 180,
+          direction: 'LeftRight'
+        }
+      }
+    ]
+  });
+
+  setTimeout(function() {
+    lineMaker.animateLinesIn();
+  }, 500);
+})();
