@@ -18,7 +18,7 @@ class Story {
     fetch('./src/assets/js/story.json')
     .then((response) => response.json())
     .then(function(data) {
-      return this.render(data, 1)
+      return this.render(data, data[0])
     }.bind(this))
   }
 
@@ -27,41 +27,85 @@ class Story {
     return;
   }
 
-  // interprète les données récupérées via getData et les affiche dans le dom
-  render(data, situation) {
+  // reçois le fichier JSON (data), l'index d'un objet correspondant à une situation (obj) et affiche les données dans le dom
+  render(data, obj) {
     let output = document.querySelector('.Output');
     let cursor = 0;
     let statement;
+    let next;
     
     let timer = setInterval( () => {
-      statement = ` <p class="Output__renderedText"> ${ data[situation].text[cursor] } </p> `;
+      statement = ` <p class="Output__renderedText"> ${ obj.text[cursor] } </p> `;
       output.innerHTML += statement;
-      if(cursor === data[situation].text.length - 1){
+      if(cursor === obj.text.length - 1){
         clearInterval(timer);
-        if( data[situation].choices ){
+        if( obj.choices ){
           output.innerHTML += `
           <div class="Output__renderedChoicesBox">
-            <button class="Output__btn" data-choice="a"> ${data[situation].choices.a.label} </button>
-            <button class="Output__btn" data-choice="b"> ${data[situation].choices.b.label} </button>
+          
+            <button id="component-1" class="button button--1 Output__btn startBtn" data-choice="a">
+              ${obj.choices.a.label}
+            <span class="button__container">
+              <span class="circle top-left"></span>
+              <span class="circle top-left"></span>
+              <span class="circle top-left"></span>
+              <span class="button__bg"></span>
+              <span class="circle bottom-right"></span>
+              <span class="circle bottom-right"></span>
+              <span class="circle bottom-right"></span>
+            </span>
+          </button>
+
+          <button id="component-1" class="button button--1 Output__btn startBtn" data-choice="b">
+              ${obj.choices.b.label}
+            <span class="button__container">
+              <span class="circle top-left"></span>
+              <span class="circle top-left"></span>
+              <span class="circle top-left"></span>
+              <span class="button__bg"></span>
+              <span class="circle bottom-right"></span>
+              <span class="circle bottom-right"></span>
+              <span class="circle bottom-right"></span>
+            </span>
+          </button>
+
           </div>
           `;
+
           document.querySelector('.Output__btn[data-choice="a"]').addEventListener('click', () => {
-            console.log(this)
-            this.clearOutput();
-            return this.render(data, 2)
+            this.clearOutput()
+            next = obj.choices.a.next
+            return this.getNextStep(data, next)
           });
+
           document.querySelector('.Output__btn[data-choice="b"]').addEventListener('click', () => {
-            console.log(this)
-            this.clearOutput();
-            return this.render(data, 3)
+            this.clearOutput()
+            next = obj.choices.b.next
+            return this.getNextStep(data, next)
           });
+
         }else{
           output.innerHTML += `<button class="Output__btn"> Suivant </button>`;
+          document.querySelector('.Output__btn').addEventListener('click', () => {
+            this.clearOutput()
+            next = obj.next
+            return this.getNextStep(data, next)
+          })
         }
       }
       cursor++;
     }, 1000);
-    document.querySelector('body').style.backgroundColor = data[0].color;
+    document.querySelector('body').style.backgroundColor = obj.color;
+  }
+
+  getNextStep(data, next){
+    for(let i=0; i<=data.length - 1; i++){
+      if(data[i].id === next){
+        console.log(data[i]);
+        return this.render(data, data[i])
+        
+      }
+    }
   }
 }
 

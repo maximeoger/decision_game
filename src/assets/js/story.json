@@ -1,69 +1,170 @@
 [
+
     {
+      "id": 0,
       "text" : [
-        "Je m'appelle Titouan et je travaille pour la société slave computing",
-        "mon métier consiste à cliquer sur le même bouton, de la même boîte de dialogue toute la journée et sans interruption.",
-        "Je suis plutôt content de ma situation. Cela pourrait être pire",
-        "Je pourrait ne pas travailler et ne pas pouvoir gagner ma vie",
-        "Je me demande si je pourrais faire autre chose"
+        "Voici Titouan, 32 ans. un jeune homme sans histoire, bon élève et travaille dans une grande boîte",
+        "Là il attend sa mère je crois, il doit pleurer encore, je dis encore parce que là c’est le seul moment qu’il a “ juste à lui “ comme il dit, c’est parce que sa mère habite avec lui peut être.",
+        "Quel fils pleure à cause de sa mère ? ",
+        "Bref..à mince j’ai oublié de me présenter je suis le narrateur bienvenue à toi dans l’histoire. Nous sommes et bien dans la tête de titouan, simple comme bonjour.",
+        "Dormons un peu, on a du boulot demain."
       ],
       "next" : 1
     },
   
+
+
     {
+      "id": 1,
       "background" : "",
       "sounds" : "",
       "text" : [
         "7:00 - Le réveil sonne..",
-        "il est temps de se lever pour aller travailler.",
-        "Je fais quoi ?"
+        "se lever ?"
       ],
       "choices" : {
-        "a" : {
-          "label" : "Je me lève",
-          "next" : 2
-        },
-        "b" : {
-          "label" : "J'éteint mon réveil",
-          "next" : 3
-        }
+        "a" : { "label" : "Oui","next" : 2 },
+        "b" : { "label" : "Non", "next" : 3 }
       }
     },
 
+
+
     {
+      "id": 2,
       "background" : "",
       "sounds" : "",
       "text" : [
-        "Un petit café et c’est parti",
-        "Il fait beau dehors, je pourrais peut-être aller au travail à pieds ?"
+        "à pieds ?"
       ],
       "choices" : {
-        "a" : {
-          "label" : "J’y vais à pieds",
-          "next" : 3
-        },
-        "b" : {
-          "label" : "Non je vais prendre le métro",
-          "next" : 4
-        }
+        "a" : { "label" : "Oui", "next" : 4 },
+        "b" : { "label" : "Non", "next" : 5 }
       }
     },
 
+  
+
     {
+      "id": 3,
       "background" : "",
       "sounds" : "",
       "text" : [
-        "Oh non ! Je vais arriver en retard !",
-        "Je vais me faire allumer et je risque de perdre mon travail !",
-        "Il faut que je parte tout de suite !"
+        "10h je sors du lit"
+      ],
+      "next" : 4
+    },
+
+
+
+    {
+      "id": 4,
+      "background" : "",
+      "sounds" : "",
+      "text" : [
+        "en retard",
+        "réprimande par le patron",
+        "protester ?"
+      ],
+      "choices" : {
+        "a" : { "label" : "oui", "next" : 6 },
+        "b" : { "label" : "non", "next" : 8 }
+      }
+    },
+
+
+
+    {
+      "id": 5,
+      "background" : "",
+      "sounds" : "",
+      "text" : [
+        "la journée se passe comme d'hab"
+      ],
+      "next" : 1
+    },
+
+
+
+
+    {
+      "id": 6,
+      "background" : "",
+      "sounds" : "",
+      "text" : [
+        "je n'aurait pas du protester. Je risque de perdre mon boulot",
+        "s'excuser ?"
+      ],
+      "choices" : {
+        "a" : { "label" : "oui", "next" : 7 },
+        "b" : { "label" : "non", "next" : 8 }
+      }
+    },
+
+
+
+    {
+      "id": 7,
+      "ending" : true,
+      "background" : "",
+      "sounds" : "",
+      "text" : [
+        "Bravo ! tu reste dans la meme boite de merde, mais en tant qu'homme de ménage"
       ]
     },
 
+
     {
+      "id": 8,
       "background" : "",
       "sounds" : "",
       "text" : [
-        "Bon je suis en retard"
-      ]
+        "Je me casse !"
+      ],
+      "next": 9
+    },
+
+
+
+    {
+      "id": 9,
+      "background" : "",
+      "sounds" : "",
+      "text" : [
+        "maman : tu t'es fait virer ! t'es vraiment un gros naze !",
+        "maman : Bon à rien ! tu va faire quoi de ta vie maintenant ? ",
+        "maman : par chance le supermarché recrute, tu ferais mieux d'y aller !",
+        "Ecouter ta mère ?"
+      ],
+      "choices" : {
+        "a" : { "label" : "oui", "next" : 10 },
+        "b" : { "label" : "non", "next" : 11 }
+      } 
+    },
+
+
+
+    {
+      "id": 10,
+      "ending" : true,
+      "background" : "",
+      "sounds" : "",
+      "text" : [
+        "Bravo tu es maintenant caissier dans un supermarché"
+      ],
+      "next" : 0
+    }, 
+
+    {
+      "id": 11,
+      "ending" : true,
+      "background" : "",
+      "sounds" : "",
+      "text" : [
+        "Bravo tu es maintenant pêcheur au Laos et tu vies grace au restaurant que tu as monté avec ta femme rencontrée sur place, tu est libre"
+      ],
+      "next" : 0
     }
+
+
 ]
