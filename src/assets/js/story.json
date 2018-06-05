@@ -82,18 +82,16 @@
     "sounds": "",
     "text": [
       "Patron: Qu’est ce que tu as foutu on t’attendait à la réunion tu n’étais pas là idiot !",
-      "Titouan : Je ne comprend pas vous m’avez dit hier que je commençais à 11h, je ne comprend pas, pas du tout.
-      ",
-      "Patron : tais-toi imbécile tu ne perds rien pour attendre toi ! ",
-      "Mais que fait Titouan ? Ne proteste pas tu risques de te faire virer."
+      "Titouan : Je ne comprend pas vous m’avez dit hier que je commençais à 11h, je ne comprend pas, pas du tout.",
+      "protester ?"
     ],
     "choices": {
       "a": {
-        "label": "Maintenant Stop",
+        "label": "oui",
         "next": 6
       },
       "b": {
-        "label": "Vous avez raison",
+        "label": "non",
         "next": 8
       }
     }
@@ -106,7 +104,15 @@
     "background": "",
     "sounds": "",
     "text": [
-      "la journée se passe comme d'hab"
+      "Titouan : Bonjour tout le monde",
+      "Patron : Titouan tu es à l’heure, bien viens en réunion ça va commencer.",
+      "Patron : Tiens une réunion on n’était pas au courant, bon allons-y.",
+      "La réunion se passe….",
+      "Patron : Titouan maintenant tu bosses, tu bosses jamais c’est dingue allez plus vite que ça.",
+      "Titouan : Oui patron. Tout de suite patron.",
+      "Aaaah encore une bonne journée en perspective non ? Allez on fait ce que le boss à dit allez.. ",
+      "Toute la journée Titouan travaille.. il finit toute ces journées à 22h.",
+      "Sa vie est modeste mais elle ne changera pas...n’est-ce pas ?"
     ],
     "next": 1
   },
@@ -119,16 +125,19 @@
     "background": "",
     "sounds": "",
     "text": [
-      "je n'aurait pas du protester. Je risque de perdre mon boulot",
-      "s'excuser ?"
+      "Patron : pardon ? vous vous moquez de moi ?",
+      "Titouan : Vous m’avez entendu, je n’ai rien à me reprocher, c’est très simple.",
+      "Patron : je ne vous permet pas de me parler comme ça.",
+      "Titouan : Alors mais allez vous ###***###***###***",
+      "Quoiiiiii ? Qu’est ce que Titouan a fait. On est foutu, foutu… Il faut s’excuser on ne peut pas faire ça…"
     ],
     "choices": {
       "a": {
-        "label": "oui",
+        "label": "Je me suis emporté",
         "next": 7
       },
       "b": {
-        "label": "non",
+        "label": "Je me casse",
         "next": 8
       }
     }
