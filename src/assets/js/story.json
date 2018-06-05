@@ -1,170 +1,209 @@
 [
 
-    {
-      "id": 0,
-      "text" : [
-        "Voici Titouan, 32 ans. un jeune homme sans histoire, bon élève et travaille dans une grande boîte",
-        "Là il attend sa mère je crois, il doit pleurer encore, je dis encore parce que là c’est le seul moment qu’il a “ juste à lui “ comme il dit, c’est parce que sa mère habite avec lui peut être.",
-        "Quel fils pleure à cause de sa mère ? ",
-        "Bref..à mince j’ai oublié de me présenter je suis le narrateur bienvenue à toi dans l’histoire. Nous sommes et bien dans la tête de titouan, simple comme bonjour.",
-        "Dormons un peu, on a du boulot demain."
-      ],
-      "next" : 1
-    },
-  
+  {
+    "id": 0,
+    "text": [
+      "Voici Titouan, 32 ans. un jeune homme sans histoire, bon élève et travaille dans une grande boîte",
+      "Là il attend sa mère je crois, il doit pleurer encore, je dis encore parce que là c’est le seul moment qu’il a “ juste à lui “ comme il dit, c’est parce que sa mère habite avec lui peut être.",
+      "Quel fils pleure à cause de sa mère ? ",
+      "Bref..à mince j’ai oublié de me présenter je suis le narrateur bienvenue à toi dans l’histoire. Nous sommes et bien dans la tête de titouan, simple comme bonjour.",
+      "Dormons un peu, on a du boulot demain."
+    ],
+    "next": 1
+  },
 
 
-    {
-      "id": 1,
-      "background" : "",
-      "sounds" : "",
-      "text" : [
-        "7:00 - Le réveil sonne..",
-        "se lever ?"
-      ],
-      "choices" : {
-        "a" : { "label" : "Oui","next" : 2 },
-        "b" : { "label" : "Non", "next" : 3 }
+
+  {
+    "id": 1,
+    "background": "",
+    "sounds": "",
+    "text": [
+      "7:00 - Le réveil sonne..",
+      "Titouan dort encore à poings fermés",
+      "Vite Titouan doit se réveiller, ça sonne depuis 10min.",
+      "Mère risque encore de s'énerver. Le boulot commence à 11h aujourd’hui mais je pourrais me lever plus tôt pour faire bonnes impressions comme toujours"
+    ],
+    "choices": {
+      "a": {
+        "label": "Se lever maintenant",
+        "next": 2
+      },
+      "b": {
+        "label": "Attendre 10h",
+        "next": 3
       }
-    },
-
-
-
-    {
-      "id": 2,
-      "background" : "",
-      "sounds" : "",
-      "text" : [
-        "à pieds ?"
-      ],
-      "choices" : {
-        "a" : { "label" : "Oui", "next" : 4 },
-        "b" : { "label" : "Non", "next" : 5 }
-      }
-    },
-
-  
-
-    {
-      "id": 3,
-      "background" : "",
-      "sounds" : "",
-      "text" : [
-        "10h je sors du lit"
-      ],
-      "next" : 4
-    },
-
-
-
-    {
-      "id": 4,
-      "background" : "",
-      "sounds" : "",
-      "text" : [
-        "en retard",
-        "réprimande par le patron",
-        "protester ?"
-      ],
-      "choices" : {
-        "a" : { "label" : "oui", "next" : 6 },
-        "b" : { "label" : "non", "next" : 8 }
-      }
-    },
-
-
-
-    {
-      "id": 5,
-      "background" : "",
-      "sounds" : "",
-      "text" : [
-        "la journée se passe comme d'hab"
-      ],
-      "next" : 1
-    },
-
-
-
-
-    {
-      "id": 6,
-      "background" : "",
-      "sounds" : "",
-      "text" : [
-        "je n'aurait pas du protester. Je risque de perdre mon boulot",
-        "s'excuser ?"
-      ],
-      "choices" : {
-        "a" : { "label" : "oui", "next" : 7 },
-        "b" : { "label" : "non", "next" : 8 }
-      }
-    },
-
-
-
-    {
-      "id": 7,
-      "ending" : true,
-      "background" : "",
-      "sounds" : "",
-      "text" : [
-        "Bravo ! tu reste dans la meme boite de merde, mais en tant qu'homme de ménage"
-      ]
-    },
-
-
-    {
-      "id": 8,
-      "background" : "",
-      "sounds" : "",
-      "text" : [
-        "Je me casse !"
-      ],
-      "next": 9
-    },
-
-
-
-    {
-      "id": 9,
-      "background" : "",
-      "sounds" : "",
-      "text" : [
-        "maman : tu t'es fait virer ! t'es vraiment un gros naze !",
-        "maman : Bon à rien ! tu va faire quoi de ta vie maintenant ? ",
-        "maman : par chance le supermarché recrute, tu ferais mieux d'y aller !",
-        "Ecouter ta mère ?"
-      ],
-      "choices" : {
-        "a" : { "label" : "oui", "next" : 10 },
-        "b" : { "label" : "non", "next" : 11 }
-      } 
-    },
-
-
-
-    {
-      "id": 10,
-      "ending" : true,
-      "background" : "",
-      "sounds" : "",
-      "text" : [
-        "Bravo tu es maintenant caissier dans un supermarché"
-      ],
-      "next" : 0
-    }, 
-
-    {
-      "id": 11,
-      "ending" : true,
-      "background" : "",
-      "sounds" : "",
-      "text" : [
-        "Bravo tu es maintenant pêcheur au Laos et tu vies grace au restaurant que tu as monté avec ta femme rencontrée sur place, tu est libre"
-      ],
-      "next" : 0
     }
+  },
+
+
+
+  {
+    "id": 2,
+    "background": "",
+    "sounds": "",
+    "text": [
+      "En route pour Slave Computer où Titouan bosse depuis maintenant 10 ans c’est toute sa vie",
+      "il doit à chaque fois donner le meilleur de soi-même pour se faire reconnaître, ah.. il fait beau aujourd’hui",
+      "Je vais au travail comment ?"
+    ],
+    "choices": {
+      "a": {
+        "label": "J’y vais à pieds",
+        "next": 4
+      },
+      "b": {
+        "label": "Non je prends le métro",
+        "next": 5
+      }
+    }
+  },
+
+
+
+  {
+    "id": 3,
+    "background": "",
+    "sounds": "",
+    "text": [
+      "Titouan : Je commence à 11h ça ne sert à rien d’arriver autant en avance.",
+      "Mère : Il faut que tu partes tout de suite bon à rien ! Depeches toi abruti!",
+      "Titouan: oui Mère..tout de suite mère.",
+      "Ahlala l’histoire d’amour entre ces deux personnes qu’est ce que c’est beau."
+    ],
+    "next": 4
+  },
+
+
+
+  {
+    "id": 4,
+    "background": "",
+    "sounds": "",
+    "text": [
+      "Patron: Qu’est ce que tu as foutu on t’attendait à la réunion tu n’étais pas là idiot !",
+      "Titouan : Je ne comprend pas vous m’avez dit hier que je commençais à 11h, je ne comprend pas, pas du tout.
+      ",
+      "Patron : tais-toi imbécile tu ne perds rien pour attendre toi ! ",
+      "Mais que fait Titouan ? Ne proteste pas tu risques de te faire virer."
+    ],
+    "choices": {
+      "a": {
+        "label": "Maintenant Stop",
+        "next": 6
+      },
+      "b": {
+        "label": "Vous avez raison",
+        "next": 8
+      }
+    }
+  },
+
+
+
+  {
+    "id": 5,
+    "background": "",
+    "sounds": "",
+    "text": [
+      "la journée se passe comme d'hab"
+    ],
+    "next": 1
+  },
+
+
+
+
+  {
+    "id": 6,
+    "background": "",
+    "sounds": "",
+    "text": [
+      "je n'aurait pas du protester. Je risque de perdre mon boulot",
+      "s'excuser ?"
+    ],
+    "choices": {
+      "a": {
+        "label": "oui",
+        "next": 7
+      },
+      "b": {
+        "label": "non",
+        "next": 8
+      }
+    }
+  },
+
+
+
+  {
+    "id": 7,
+    "ending": true,
+    "background": "",
+    "sounds": "",
+    "text": [
+      "Bravo ! tu reste dans la meme boite de merde, mais en tant qu'homme de ménage"
+    ]
+  },
+
+
+  {
+    "id": 8,
+    "background": "",
+    "sounds": "",
+    "text": [
+      "Je me casse !"
+    ],
+    "next": 9
+  },
+
+
+
+  {
+    "id": 9,
+    "background": "",
+    "sounds": "",
+    "text": [
+      "maman : tu t'es fait virer ! t'es vraiment un gros naze !",
+      "maman : Bon à rien ! tu va faire quoi de ta vie maintenant ? ",
+      "maman : par chance le supermarché recrute, tu ferais mieux d'y aller !",
+      "Ecouter ta mère ?"
+    ],
+    "choices": {
+      "a": {
+        "label": "oui",
+        "next": 10
+      },
+      "b": {
+        "label": "non",
+        "next": 11
+      }
+    }
+  },
+
+
+
+  {
+    "id": 10,
+    "ending": true,
+    "background": "",
+    "sounds": "",
+    "text": [
+      "Bravo tu es maintenant caissier dans un supermarché"
+    ],
+    "next": 0
+  },
+
+  {
+    "id": 11,
+    "ending": true,
+    "background": "",
+    "sounds": "",
+    "text": [
+      "Bravo tu es maintenant pêcheur au Laos et tu vies grace au restaurant que tu as monté avec ta femme rencontrée sur place, tu est libre"
+    ],
+    "next": 0
+  }
 
 
 ]

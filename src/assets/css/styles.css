@@ -105,8 +105,8 @@ body {
 
 .button--1 .circle {
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 15px;
   background: white;
   transition: background-color 0.1s ease-out; }
