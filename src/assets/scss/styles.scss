@@ -1,3 +1,144 @@
-@import './global/_reset.scss';
-@import './global/_fonts.scss';
-@import './partials/_interface.scss';
+body {
+  background-color: #4763B6;
+  height: 100%;
+  width: 100%;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.decolines {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  z-index: -1;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+}
+
+.decolines--fixed {
+  position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.decoline {
+	position: absolute;
+}
+
+.Svg {
+  margin-top: 2%;
+  width: 100vw;
+  z-index: 100000;
+  height: 60vh;
+  &__Container {
+    width: 25%;
+    margin: 0 auto;
+    & > img {
+      width: 100%;
+      height: auto;
+      filter: blur(0px);
+    }
+  }
+}
+
+.section {
+  color: white;
+  margin: 200px auto;
+}
+
+.button--1, .button--1 .button__bg {
+  background-color: white;
+  font-family: 'oswald', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #4763B6;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  transition: all 0.3s ease-out;
+}
+
+.button--1:hover, .button--1 .button__bg:hover {
+opacity: .8;
+
+}
+
+.button--1:focus, .button--1 .button__bg:focus {
+  outline: none;
+  color: #fff;
+}
+
+
+.button--1 {
+  position: relative;
+  border: 1px solid white;
+  background: none;
+  z-index: 0;
+}
+
+.button--1:hover {
+  background: none;
+}
+
+.button--1:hover .circle {
+  background: white;
+}
+
+.button--1 .circle {
+  z-index: -1;
+}
+
+.button--1:hover .button__bg {
+  color: white;
+  border: 1px solid white;
+}
+
+.button--1 .button__container {
+  position: absolute;
+  display: block;
+  width: 200%;
+  height: 400%;
+  top: -150%;
+  left: -50%;
+  pointer-events: none;
+  z-index: -1;
+  transform: translateZ(0);
+  transition: all 0.1s ease-out;
+}
+
+.button--1 .button__bg, .button--1 .circle {
+  animation: hue-rotate 10s linear infinite;
+}
+
+.button--1 .button__bg {
+  position: absolute;
+  width: 50%;
+  height: 25%;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+}
+
+.button--1 .circle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: white;
+  transition: background-color 0.1s ease-out;
+}
+
+.button--1 .circle.top-left {
+  top: 40%;
+  left: 27%;
+}
+
+.button--1 .circle.bottom-right {
+  bottom: 40%;
+  right: 27%;
+}

@@ -7,19 +7,57 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./src/assets/css/styles.css">
   <title>Decision game</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300" rel="stylesheet">
+  <script>
+    document.documentElement.className = 'js';
+  </script>
 </head>
 
 <body>
+
   <section class="Game">
     <div class="Game__container">
+
       <div class="Output">
+
+        <div class="Svg">
+            <div class="Svg__Container">
+                <img src="img/ui6.jpg" alt="">
+              </div>
+        </div>
+        
         <h1 class="Output__title">Les choix</h1>
         <p class="Output__text">La vie est un choix de circonstances et personne n'as de pouvoir sur les circonstances. <br> Mais chacun en a sur ces choix ...</p>
-        <button class="Output__btn startBtn">Commencer l'aventure</button>
+        <button id="component-1" class="button button--1 Output__btn startBtn">
+          Commencer l'aventure
+          <span class="button__container">
+            <span class="circle top-left"></span>
+            <span class="circle top-left"></span>
+            <span class="circle top-left"></span>
+            <span class="button__bg"></span>
+            <span class="circle bottom-right"></span>
+            <span class="circle bottom-right"></span>
+            <span class="circle bottom-right"></span>
+          </span>
+        </button>
       </div>
     </div>
   </section>
+  <script src="./src/assets/js/Line.js"></script>
+  <!--<script src="./src/assets/js/button.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
   <script src="./src/assets/js/scripts.js"></script>
+  <script>
+    var blur = document.querySelector('button');
+    var img = document.querySelector('.Svg__Container');
+
+    blur.addEventListener('click', function() {
+
+    });
+  </script>
+
 </body>
 
 </html>
+ 

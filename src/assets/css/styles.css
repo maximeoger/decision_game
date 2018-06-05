@@ -1,108 +1,120 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
 body {
-  line-height: 1; }
+  background-color: #4763B6;
+  height: 100%;
+  width: 100%; }
 
-ol, ul {
-  list-style: none; }
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
-blockquote, q {
-  quotes: none; }
+.decolines {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  pointer-events: none; }
 
-blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
+.decolines--fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%; }
 
-q:before, q:after {
-  content: '';
-  content: none; }
+.decoline {
+  position: absolute; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-@font-face {
-  font-family: "Quattrocento-Bold";
-  src: url("../fonts/Quattrocento-Bold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Quattrocento-Regular";
-  src: url("../fonts/Quattrocento-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Oswald-Bold";
-  src: url("../fonts/Oswald-Bold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Oswald-ExtraLight";
-  src: url("../fonts/Oswald-ExtraLight.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Oswald-Light";
-  src: url("../fonts/Oswald-Light.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Oswald-Medium";
-  src: url("../fonts/Oswald-Medium.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Oswald-Regular";
-  src: url("../fonts/Oswald-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Oswald-SemiBold";
-  src: url("../fonts/Oswald-SemiBold.ttf") format("truetype"); }
-
-body {
-  background: #191919; }
-
-.Game {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-  .Game__container {
-    width: 50vw;
+.Svg {
+  margin-top: 2%;
+  width: 100vw;
+  z-index: 100000;
+  height: 60vh; }
+  .Svg__Container {
+    width: 25%;
     margin: 0 auto; }
+    .Svg__Container > img {
+      width: 100%;
+      height: auto;
+      filter: blur(0px); }
 
-.Output {
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .Output__title {
-    font-family: "Oswald-SemiBold";
-    font-size: 37px; }
-  .Output__text {
-    margin-top: 170px;
-    font-family: "Quattrocento-regular";
-    font-size: 16px;
-    text-align: center;
-    line-height: 24px; }
-  .Output__renderedText {
-    margin-top: 25px; }
-  .Output__btn {
-    color: #ffffff;
-    width: 226px;
-    height: 40px;
-    border-radius: 0;
-    border: solid 1px #666666;
-    background: none;
-    font-family: "Oswald-Regular";
-    font-size: 16px; }
-  .Output__renderedChoicesBox {
-    margin-top: 25px; }
+.section {
+  color: white;
+  margin: 200px auto; }
+
+.button--1, .button--1 .button__bg {
+  background-color: white;
+  font-family: 'oswald', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #4763B6;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  transition: all 0.3s ease-out; }
+
+.button--1:hover, .button--1 .button__bg:hover {
+  opacity: .8; }
+
+.button--1:focus, .button--1 .button__bg:focus {
+  outline: none;
+  color: #fff; }
+
+.button--1 {
+  position: relative;
+  border: 1px solid white;
+  background: none;
+  z-index: 0; }
+
+.button--1:hover {
+  background: none; }
+
+.button--1:hover .circle {
+  background: white; }
+
+.button--1 .circle {
+  z-index: -1; }
+
+.button--1:hover .button__bg {
+  color: white;
+  border: 1px solid white; }
+
+.button--1 .button__container {
+  position: absolute;
+  display: block;
+  width: 200%;
+  height: 400%;
+  top: -150%;
+  left: -50%;
+  pointer-events: none;
+  z-index: -1;
+  transform: translateZ(0);
+  transition: all 0.1s ease-out; }
+
+.button--1 .button__bg, .button--1 .circle {
+  animation: hue-rotate 10s linear infinite; }
+
+.button--1 .button__bg {
+  position: absolute;
+  width: 50%;
+  height: 25%;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%); }
+
+.button--1 .circle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: white;
+  transition: background-color 0.1s ease-out; }
+
+.button--1 .circle.top-left {
+  top: 40%;
+  left: 27%; }
+
+.button--1 .circle.bottom-right {
+  bottom: 40%;
+  right: 27%; }
