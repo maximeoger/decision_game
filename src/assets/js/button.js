@@ -1,4 +1,3 @@
-
 initBt1();
 
 function initBt1() {
@@ -53,7 +52,7 @@ function initBt1() {
 
   btTl.timeScale(4);
 
-  bt1.addEventListener('click', function() {
+  bt1.addEventListener('mouseenter', function() {
     bt1c.style.filter = 'url(#filter-goo-1)';
     btTl.restart();
   });
