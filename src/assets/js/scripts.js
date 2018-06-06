@@ -30,25 +30,26 @@ class Story {
 
   // reçois le fichier JSON (data), l'index d'un objet correspondant à une situation (obj) et affiche les données dans le dom
   render(data, obj) {
+
     document.querySelector('body').style.backgroundColor = obj.color
     document.querySelector('.Game__img').setAttribute("src", obj.image)
     let output_txt = document.querySelector('.Output__txt')
-    let output_btns = document.querySelector('.Output__btnsContainer')
+    let output_btns = document.querySelector(".Output__btnsContainer")
     let cursor = 0
-    let statement
-    let txtArray = []
     let next
-    
-    let timer = setInterval( () => {
-      statement = ` <p class="Output__renderedText"> ${ obj.text[cursor] } </p> `
-      //txtArray.push(statement)
-      
-      //console.log(statement)
-      //document.querySelectorAll('.Output__renderedText')[current]
+    let nextBtn
+    let statement
 
+    for (let i=0; i <= obj.text.length - 1 ; i++) {
+      statement = `<p class="Output__renderedText"> ${ obj.text[i] } </p>`
       output_txt.innerHTML += statement
-      console.log(document.querySelector(".Output__renderedText"))
-      // anim
+    }
+
+    let timer = setInterval( () => {
+
+      let currentTxt = document.querySelectorAll(".Output__renderedText")
+      currentTxt[cursor].classList.add("--visible")
+
       if(cursor === obj.text.length - 1){
         clearInterval(timer)
 
@@ -141,7 +142,7 @@ class Story {
 
       }
       cursor++
-    }, 100)
+    }, 1500)
 
   }
 

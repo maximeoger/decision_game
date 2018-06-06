@@ -73,11 +73,24 @@ body {
 .Game {
   height: 100vh;
   display: flex;
+  background: #191919;
+  color: #fff;
   flex-direction: column;
   justify-content: space-around; }
   .Game__container {
-    width: 50vw;
+    text-align: center;
+    width: 75vw;
     margin: 0 auto; }
+  .Game__title {
+    font-family: "Oswald-SemiBold";
+    font-size: 37px; }
+  .Game__text {
+    margin-top: 50px;
+    font-family: "Quattrocento-regular";
+    font-size: 16px;
+    line-height: 24px; }
+  .Game__btn {
+    margin-top: 50px; }
   .Game__img {
     height: 350px; }
   .Game__mainMenu {
@@ -88,9 +101,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .Output__title {
-    font-family: "Oswald-SemiBold";
-    font-size: 37px; }
   .Output__txt {
     overflow: auto;
     height: 150px;
@@ -99,9 +109,13 @@ body {
     text-align: center;
     line-height: 24px; }
   .Output__renderedText {
-    margin-top: 25px; }
+    margin-top: 25px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all ease-out .2s; }
   .Output__btnsContainer {
-    height: 40px; }
+    height: 40px;
+    margin-top: 25px; }
   .Output__btn {
     color: #ffffff;
     width: 226px;
@@ -111,6 +125,10 @@ body {
     background: none;
     font-family: "Oswald-Regular";
     font-size: 16px; }
+
+.--visible {
+  opacity: 1;
+  transform: translateY(0); }
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -218,8 +236,8 @@ body {
 
 .button--1 .circle {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 15px;
   background: white;
   transition: background-color 0.1s ease-out; }
