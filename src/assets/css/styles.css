@@ -112,7 +112,8 @@ body {
     font-family: "Quattrocento-regular";
     font-size: 16px;
     text-align: center;
-    line-height: 24px; }
+    line-height: 24px;
+    position: relative; }
   .Output__renderedText {
     margin-top: 25px;
     opacity: 0;
@@ -133,6 +134,14 @@ body {
 
 .--visible {
   opacity: 1; }
+
+.narrator {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5); }
+
+.Character {
+  font-weight: bold;
+  color: #fff; }
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;

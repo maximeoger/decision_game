@@ -63,6 +63,7 @@ body{
         font-size: 16px;
         text-align: center;
         line-height: 24px;
+        position: relative;
     }
 
     &__renderedText{
@@ -91,4 +92,12 @@ body{
 }
 .--visible{
     opacity: 1;
+}
+.narrator {
+    font-style: italic;
+    color: rgba(255,255,255, 0.5);
+}
+.Character{
+    font-weight: bold;
+    color: #fff;
 }
