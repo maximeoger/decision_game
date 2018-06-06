@@ -1,4 +1,3 @@
-
 initBt1();
 
 function initBt1() {
