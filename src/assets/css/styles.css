@@ -1,36 +1,28 @@
 @font-face {
   font-family: "Quattrocento-Bold";
   src: url("../fonts/Quattrocento-Bold.ttf") format("truetype"); }
-
 @font-face {
   font-family: "Quattrocento-Regular";
   src: url("../fonts/Quattrocento-Regular.ttf") format("truetype"); }
-
 @font-face {
   font-family: "Oswald-Bold";
   src: url("../fonts/Oswald-Bold.ttf") format("truetype"); }
-
 @font-face {
   font-family: "Oswald-ExtraLight";
   src: url("../fonts/Oswald-ExtraLight.ttf") format("truetype"); }
-
 @font-face {
   font-family: "Oswald-Light";
   src: url("../fonts/Oswald-Light.ttf") format("truetype"); }
-
 @font-face {
   font-family: "Oswald-Medium";
   src: url("../fonts/Oswald-Medium.ttf") format("truetype"); }
-
 @font-face {
   font-family: "Oswald-Regular";
   src: url("../fonts/Oswald-Regular.ttf") format("truetype"); }
-
 @font-face {
   font-family: "Oswald-SemiBold";
   src: url("../fonts/Oswald-SemiBold.ttf") format("truetype"); }
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -96,7 +88,7 @@ body {
   .Game__btn {
     margin-top: 50px; }
   .Game__img {
-    height: 350px; }
+    height: 200px; }
   .Game__mainMenu {
     position: absolute;
     z-index: 999;
@@ -253,3 +245,8 @@ body {
 .button--1 .circle.bottom-right {
   bottom: 40%;
   right: 27%; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+/*# sourceMappingURL=styles.css.map */

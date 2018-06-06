@@ -12,7 +12,7 @@ class Story {
       return this.getData()
     });
   }
-  
+
   // appel fetch pour récupérer les données dans le story.json
   getData() {
     fetch('./src/assets/js/story.json')
@@ -49,7 +49,7 @@ class Story {
     let timer = setInterval( () => {
       let currentTxt = document.querySelectorAll(".Output__renderedText")
       currentTxt[cursor].classList.add("--visible")
-      
+
       output_txt.scrollTop += (currentTxt[cursor].clientHeight + 5)
 
       if(cursor === obj.text.length - 1){
@@ -59,7 +59,7 @@ class Story {
 
           output_btns.innerHTML = `
           <div class="Output__renderedChoicesBox">
-          
+
               <button data-choice="a" id="component-1" class="button button--1 Output__btn startBtn">
               ${obj.choices.a.label}
               <span class="button__container">
@@ -72,7 +72,6 @@ class Story {
                 <span class="circle bottom-right"></span>
               </span>
             </button>
-
             <button data-choice="b" id="component-1" class="button button--1 Output__btn startBtn">
             ${obj.choices.b.label}
             <span class="button__container">
