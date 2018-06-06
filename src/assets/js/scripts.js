@@ -30,24 +30,48 @@ class Story {
 
   // reçois le fichier JSON (data), l'index d'un objet correspondant à une situation (obj) et affiche les données dans le dom
   render(data, obj) {
+    document.querySelector('body').style.backgroundColor = obj.color
+    document.querySelector('.Game__img').setAttribute("src", obj.image)
     let output_txt = document.querySelector('.Output__txt')
     let output_btns = document.querySelector('.Output__btnsContainer')
     let cursor = 0
     let statement
+    let txtArray = []
     let next
     
     let timer = setInterval( () => {
       statement = ` <p class="Output__renderedText"> ${ obj.text[cursor] } </p> `
+      //txtArray.push(statement)
+      
+      //console.log(statement)
+      //document.querySelectorAll('.Output__renderedText')[current]
+
       output_txt.innerHTML += statement
+      console.log(document.querySelector(".Output__renderedText"))
+      // anim
       if(cursor === obj.text.length - 1){
         clearInterval(timer)
+
         if( obj.choices ){
 
           output_btns.innerHTML = `
           <div class="Output__renderedChoicesBox">
           
-            <button id="component-1" class="button button--1 Output__btn startBtn" data-choice="a">
+              <button data-choice="a" id="component-1" class="button button--1 Output__btn startBtn">
               ${obj.choices.a.label}
+              <span class="button__container">
+                <span class="circle top-left"></span>
+                <span class="circle top-left"></span>
+                <span class="circle top-left"></span>
+                <span class="button__bg"></span>
+                <span class="circle bottom-right"></span>
+                <span class="circle bottom-right"></span>
+                <span class="circle bottom-right"></span>
+              </span>
+            </button>
+
+            <button data-choice="b" id="component-1" class="button button--1 Output__btn startBtn">
+            ${obj.choices.b.label}
             <span class="button__container">
               <span class="circle top-left"></span>
               <span class="circle top-left"></span>
@@ -58,23 +82,8 @@ class Story {
               <span class="circle bottom-right"></span>
             </span>
           </button>
-
-          <button id="component-1" class="button button--1 Output__btn startBtn" data-choice="b">
-              ${obj.choices.b.label}
-            <span class="button__container">
-              <span class="circle top-left"></span>
-              <span class="circle top-left"></span>
-              <span class="circle top-left"></span>
-              <span class="button__bg"></span>
-              <span class="circle bottom-right"></span>
-              <span class="circle bottom-right"></span>
-              <span class="circle bottom-right"></span>
-            </span>
-          </button>
-
           </div>
           `
-
           document.querySelector('.Output__btn[data-choice="a"]').addEventListener('click', () => {
             this.clearOutput()
             next = obj.choices.a.next
@@ -87,36 +96,57 @@ class Story {
             return this.getNextStep(data, next)
           })
 
-        }else{
-          output_btns.innerHTML = `<button id="nextBtn" class="Output__btn"> ${obj.label} </button>`
-          document.getElementById('nextBtn').addEventListener('click', () => {
+        }else if (obj.ending===true) {
+
+          output_btns.innerHTML = `
+            <button id="component-1" class="button button--1 Output__btn restartBtn">
+            ${obj.label}
+            <span class="button__container">
+              <span class="circle top-left"></span>
+              <span class="circle top-left"></span>
+              <span class="circle top-left"></span>
+              <span class="button__bg"></span>
+              <span class="circle bottom-right"></span>
+              <span class="circle bottom-right"></span>
+              <span class="circle bottom-right"></span>
+            </span>
+          </button>
+        `
+      document.querySelector('.restartBtn').addEventListener('click', () => {
+        this.clearOutput()
+        return this.showMenu()
+      })
+
+        } else {
+          output_btns.innerHTML = `
+          <button id="component-1" class="button button--1 Output__btn nextBtn">
+              ${obj.label}
+              <span class="button__container">
+                <span class="circle top-left"></span>
+                <span class="circle top-left"></span>
+                <span class="circle top-left"></span>
+                <span class="button__bg"></span>
+                <span class="circle bottom-right"></span>
+                <span class="circle bottom-right"></span>
+                <span class="circle bottom-right"></span>
+              </span>
+            </button>
+          `
+          document.querySelector('.nextBtn').addEventListener('click', () => {
             this.clearOutput()
             next = obj.next
             return this.getNextStep(data, next)
           })
         }
+
       }
-
       cursor++
-
     }, 100)
 
-    document.querySelector('body').style.backgroundColor = obj.color
-
-    if(obj.ending === true){
-      console.log(obj)
-      output_btns.innerHTML = `<button id="restartBtn" class="Output__btn"> ${obj.label} </button>`
-      document.getElementById('restartBtn').addEventListener('click', () => {
-        console.log('lol')
-        //this.clearOutput()
-        //return this.showMenu()
-      })
-    }
   }
 
   showMenu() {
-    //document.querySelector('.Game__mainMenu').style.display = ""
-    console.log(document.querySelector('.Game__mainMenu').style.display)
+    document.querySelector('.Game__mainMenu').style.display = ""
   }
 
   getNextStep(data, next){

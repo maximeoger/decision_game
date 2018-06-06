@@ -2,6 +2,8 @@
 
   {
     "id": 0,
+    "image" : "src/assets/img/00.png",
+    "background" : "",
     "text": [
       "Voici Titouan, 32 ans. un jeune homme sans histoire, bon élève et travaille dans une grande boîte",
       "Là il attend sa mère je crois, il doit pleurer encore, je dis encore parce que là c’est le seul moment qu’il a “ juste à lui “ comme il dit, c’est parce que sa mère habite avec lui peut être.",
@@ -9,14 +11,14 @@
       "Bref..à mince j’ai oublié de me présenter je suis le narrateur bienvenue à toi dans l’histoire. Nous sommes et bien dans la tête de titouan, simple comme bonjour.",
       "Dormons un peu, on a du boulot demain."
     ],
-    "next": 1
+    "next": 1,
+    "label" : "au lit"
   },
-
-
 
   {
     "id": 1,
-    "background": "",
+    "image" : "src/assets/img/01.png",
+    "background" : "",
     "sounds": "",
     "text": [
       "7:00 - Le réveil sonne..",
@@ -36,10 +38,10 @@
     }
   },
 
-
   {
     "id": 2,
-    "background": "",
+    "image" : "src/assets/img/02.png",
+    "background" : "",
     "sounds": "",
     "text": [
       "En route pour Slave Computer où Titouan bosse depuis maintenant 10 ans c’est toute sa vie",
@@ -58,11 +60,10 @@
     }
   },
 
-
-
   {
     "id": 3,
-    "background": "",
+    "image" : "src/assets/img/03.png",
+    "background" : "",
     "sounds": "",
     "text": [
       "Titouan : Je commence à 11h ça ne sert à rien d’arriver autant en avance.",
@@ -70,42 +71,41 @@
       "Titouan: oui Mère..tout de suite mère.",
       "Ahlala l’histoire d’amour entre ces deux personnes qu’est ce que c’est beau."
     ],
-    "next": 4
+    "next": 4,
+    "label": "C'est parti"
   },
-
-
 
   {
     "id": 4,
-    "background": "",
+    "image" : "src/assets/img/05.png",
+    "background" : "",
     "sounds": "",
     "text": [
       "Patron: Qu’est ce que tu as foutu on t’attendait à la réunion tu n’étais pas là idiot !",
-      "Titouan : Je ne comprend pas vous m’avez dit hier que je commençais à 11h, je ne comprend pas, pas du tout.",
-      "protester ?"
+      "Titouan : Je ne comprend pas vous m’avez dit hier que je commençais à 11h, je ne comprend pas",
+      "Patron : Je te préviens, c'est la dernière fois !"
     ],
     "choices": {
       "a": {
-        "label": "oui",
+        "label": "Oui Patron",
         "next": 6
       },
       "b": {
-        "label": "non",
+        "label": "Salaud !",
         "next": 8
       }
     }
   },
 
-
-
   {
     "id": 5,
-    "background": "",
+    "image" : "src/assets/img/04.png",
+    "background" : "",
     "sounds": "",
     "text": [
       "Titouan : Bonjour tout le monde",
       "Patron : Titouan tu es à l’heure, bien viens en réunion ça va commencer.",
-      "Patron : Tiens une réunion on n’était pas au courant, bon allons-y.",
+      "Titouan : Tiens une réunion on n’était pas au courant, bon allons-y.",
       "La réunion se passe….",
       "Patron : Titouan maintenant tu bosses, tu bosses jamais c’est dingue allez plus vite que ça.",
       "Titouan : Oui patron. Tout de suite patron.",
@@ -113,12 +113,14 @@
       "Toute la journée Titouan travaille.. il finit toute ces journées à 22h.",
       "Sa vie est modeste mais elle ne changera pas...n’est-ce pas ?"
     ],
-    "next": 1
+    "next": 1,
+    "label" : "On rentre à la maison"
   },
 
   {
     "id": 6,
-    "background": "",
+    "image" : "src/assets/img/04.png",
+    "background" : "",
     "sounds": "",
     "text": [
       "Patron : pardon ? vous vous moquez de moi ?",
@@ -136,10 +138,14 @@
         "label": "Je me casse",
         "next": 8
       }
+    }
+  },
+
   {
     "id": 7,
-    "ending": true,
-    "background": "",
+    "ending": false,
+    "image" : "src/assets/img/04.png",
+    "background" : "",
     "sounds": "",
     "text": [
       "Patron : C'est ce que je préfère, toi je vais faire en sorte que tu souffres, c'est un affront que tu me fais.",
@@ -147,53 +153,46 @@
       "ça y est Titouan pleure..on aurait jamais du faire ça, tout est de sa faute !",
       "Patron : Vas voir la secrétaire, je te garde mais tu feras que les cafés et le ménage, ça sera ta punition pour m'avoir parlé comme ça !",
       "On est obligé d'accepter..Tout est de ta faute"
-    ]
+    ],
+    "next": 999,
+    "label": "d'accord"
   },
-    
+  
+  {
+    "id": 8,
+    "image" : "src/assets/img/08.png",
+    "background" : "",
+    "ending" : false,
+    "sounds" : "",
+    "text" : [
+      "Je me casse !"
+    ],
+    "next": 9,
+    "label" : "Je me casse !"
+  },
 
-    {
-      "id": 8,
-      "ending" : false,
-      "background" : "",
-      "sounds" : "",
-      "text" : [
-        "Je me casse !"
-      ],
-      "next": 9,
-      "label" : "Je me casse !"
-    },
-
-
-
-    {
-      "id": 9,
-      "ending" : false,
-      "background" : "",
-      "sounds" : "",
-      "text" : [
-        "maman : tu t'es fait virer ! t'es vraiment un gros naze !",
-        "maman : Bon à rien ! tu va faire quoi de ta vie maintenant ? ",
-        "maman : par chance le supermarché recrute, tu ferais mieux d'y aller !"
-      ],
-      "choices" : {
-        "a" : { "label" : "Oui maman", "next" : 10 },
-        "b" : { "label" : "Tg grosse conne", "next" : 11 }
-      } 
-    },
-    {
-      "id": 999,
-      "ending": true,
-      "text": [
-        "La partie s'arrête ici. N'hésitez pas à recommencer pour débloquer les deux autres fins !"
-      ],
-      "label" : "Oui je veux recommencer !"
-    }
+  {
+    "id": 9,
+    "ending" : false,
+    "image" : "src/assets/img/09.png",
+    "background" : "",
+    "sounds" : "",
+    "text" : [
+      "maman : tu t'es fait virer ! t'es vraiment un gros naze !",
+      "maman : Bon à rien ! tu va faire quoi de ta vie maintenant ? ",
+      "maman : par chance le supermarché recrute, tu ferais mieux d'y aller !"
+    ],
+    "choices" : {
+      "a" : { "label" : "Oui maman", "next" : 10 },
+      "b" : { "label" : "Jamais !", "next" : 11 }
+    } 
   },
 
   {
     "id": 10,
     "ending": true,
-    "background": "",
+    "image" : "src/assets/img/00.png",
+    "background" : "",
     "sounds": "",
     "text": [
       "Titouan : Mère..je ferais tout pour toi, je trouve un autre boulot et on pourra manger.",
@@ -201,29 +200,41 @@
       "Titouan : Je suis désolé..",
       "Maintenant Titouan n’a pas d’autre choix que de rester avec sa mère parce qu’elle ne travaille pas. Il va bosser, je ne sais pas..dans un supermarché, tout est de sa faute de toute façon."
     ],
-    "next": 0
+    "next": 999,
+    "label" : "C'est la vie"
   },
 
   {
     "id": 11,
     "ending": true,
-    "background": "",
+    "image" : "src/assets/img/10.png",
+    "background" : "",
     "sounds": "",
     "text": [
-      "Titouan : Mère, tu arrêtes ! arrêtes de me traiter de bon à rien ! "
+      "Titouan : Mère, tu arrêtes ! arrêtes de me traiter de bon à rien ! ",
       "Arrêtes de m'insulter tout les jours ! Arrêtes de dire ce que je dois faire !",
       "Mère : Quoi ?",
       "Titouan : J'aimerais vivre ma vie, avoir la liberté de faire des choix.",
       "Je n'ai pu vivre ma vie comme je la voulais",
-      "Je pars Mère, pour toujours..Au revoir"
+      "Je pars Mère, pour toujours..Au revoir",
       "...( notre conscience change totalement)",
       "Titouan part pour partir loin, très loin, là où il peut se refaire une nouvelle vie",
-      "Vous avez terminé, Bravo !",
+      "Vous avez terminé, Bravo !"
+    ],
+    "next" : 999,
+      "label" : "Trop bien !"
+  },
+
+  {
+    "id": 999,
+    "image" : "src/assets/img/11.png",
+    "background" : "",
+    "ending": true,
+    "text": [
+      "La partie s'arrête ici. N'hésitez pas à recommencer pour débloquer les deux autres fins !",
       "Réalisé par Maxime Oger et Hector Travaillé"
     ],
-     "next" : 999,
-      "label" : "Trop bien !"
+    "label" : "Oui je veux recommencer !"
   }
-
 
 ]
