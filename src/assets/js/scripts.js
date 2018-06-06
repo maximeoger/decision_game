@@ -30,7 +30,6 @@ class Story {
 
   // reçois le fichier JSON (data), l'index d'un objet correspondant à une situation (obj) et affiche les données dans le dom
   render(data, obj) {
-
     document.querySelector('body').style.backgroundColor = obj.color
     document.querySelector('.Game__img').setAttribute("src", obj.image)
     let output_txt = document.querySelector('.Output__txt')
@@ -40,15 +39,18 @@ class Story {
     let nextBtn
     let statement
 
+    output_txt.scrollTop = 0;
+
     for (let i=0; i <= obj.text.length - 1 ; i++) {
       statement = `<p class="Output__renderedText"> ${ obj.text[i] } </p>`
       output_txt.innerHTML += statement
     }
 
     let timer = setInterval( () => {
-
       let currentTxt = document.querySelectorAll(".Output__renderedText")
       currentTxt[cursor].classList.add("--visible")
+      
+      output_txt.scrollTop += (currentTxt[cursor].clientHeight + 5)
 
       if(cursor === obj.text.length - 1){
         clearInterval(timer)

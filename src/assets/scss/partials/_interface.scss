@@ -4,19 +4,20 @@ body{
 .Game{
     height: 100vh;
     display: flex;
-    background: #191919;
+    //background: #191919;
     color: #fff;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    position: relative;
 
     &__container{
         text-align: center;
         width: 75vw;
-        margin: 0 auto;
     }
 
     &__imgContainer{
-
+        
     }
     &__title{
         font-family: "Oswald-SemiBold";
@@ -36,32 +37,37 @@ body{
     }
     &__mainMenu{
         position: absolute;
+        z-index: 999;
     }
 }
 .Output{
     color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
 
     &__txt{
-        overflow: auto;
+       // padding-top: 42px;
+        overflow: scroll;
+        scroll-behavior: smooth;
         height: 150px;
         font-family: "Quattrocento-regular";
         font-size: 16px;
         text-align: center;
         line-height: 24px;
+        background: red;
     }
+
     &__renderedText{
         margin-top: 25px;
         opacity: 0;
-        transform: translateY(50px);
         transition: all ease-out .2s;
+        margin-bottom: 25px;
     }
+
     &__btnsContainer{
         height: 40px;
         margin-top: 25px;
     }
+
     &__btn{
         color: #ffffff;
         width: 226px;
@@ -76,5 +82,4 @@ body{
 }
 .--visible{
     opacity: 1;
-    transform: translateY(0);
 }
