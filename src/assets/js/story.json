@@ -80,18 +80,19 @@
     "image" : "src/assets/img/boss.png",
     "background" : "",
     "sounds": "",
+
     "text": [
-      "<em class='character'> Patron :  </em> Qu’est ce que tu as foutu on t’attendait à la réunion tu n’étais pas là idiot !",
+      "<em class='character'> Patron : </em> Qu’est ce que tu as foutu on t’attendait à la réunion tu n’étais pas là idiot !",
       "<em class='character'> Titouan : </em> Je ne comprend pas vous m’avez dit hier que je commençais à 11h, je ne comprend pas",
       "<em class='character'> Patron : </em> Je te préviens, c'est la dernière fois !"
     ],
     "choices": {
       "a": {
         "label": "Oui Patron",
-        "next": 6
+        "next": 5
       },
       "b": {
-        "label": "Salaud !",
+        "label": "non ! je proteste !",
         "next": 8
       }
     }
