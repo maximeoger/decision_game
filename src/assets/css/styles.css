@@ -1,7 +1,116 @@
+@font-face {
+  font-family: "Quattrocento-Bold";
+  src: url("../fonts/Quattrocento-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Quattrocento-Regular";
+  src: url("../fonts/Quattrocento-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url("../fonts/Oswald-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Oswald-ExtraLight";
+  src: url("../fonts/Oswald-ExtraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Oswald-Light";
+  src: url("../fonts/Oswald-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url("../fonts/Oswald-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("../fonts/Oswald-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Oswald-SemiBold";
+  src: url("../fonts/Oswald-SemiBold.ttf") format("truetype"); }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
 body {
-  background-color: #4763B6;
-  height: 100%;
-  width: 100%; }
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background: #4763b6; }
+
+.Game {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .Game__container {
+    width: 50vw;
+    margin: 0 auto; }
+  .Game__img {
+    height: 350px; }
+  .Game__mainMenu {
+    position: absolute; }
+
+.Output {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .Output__title {
+    font-family: "Oswald-SemiBold";
+    font-size: 37px; }
+  .Output__txt {
+    overflow: auto;
+    height: 150px;
+    font-family: "Quattrocento-regular";
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px; }
+  .Output__renderedText {
+    margin-top: 25px; }
+  .Output__btnsContainer {
+    height: 40px; }
+  .Output__btn {
+    color: #ffffff;
+    width: 226px;
+    height: 40px;
+    border-radius: 0;
+    border: solid 1px #666666;
+    background: none;
+    font-family: "Oswald-Regular";
+    font-size: 16px; }
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -25,19 +134,23 @@ body {
 .decoline {
   position: absolute; }
 
+/*
 .Svg {
   margin-top: 2%;
   width: 100vw;
   z-index: 100000;
-  height: 60vh; }
-  .Svg__Container {
+  height: 60vh;
+  &__Container {
     width: 25%;
-    margin: 0 auto; }
-    .Svg__Container > img {
+    margin: 0 auto;
+    & > img {
       width: 100%;
       height: auto;
-      filter: blur(0px); }
-
+      filter: blur(0px);
+    }
+  }
+}
+*/
 .section {
   color: white;
   margin: 200px auto; }

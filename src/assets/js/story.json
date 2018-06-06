@@ -116,9 +116,6 @@
     "next": 1
   },
 
-
-
-
   {
     "id": 6,
     "background": "",
@@ -139,11 +136,6 @@
         "label": "Je me casse",
         "next": 8
       }
-    }
-  },
-
-
-
   {
     "id": 7,
     "ending": true,
@@ -157,43 +149,46 @@
       "On est obligé d'accepter..Tout est de ta faute"
     ]
   },
+    
+
+    {
+      "id": 8,
+      "ending" : false,
+      "background" : "",
+      "sounds" : "",
+      "text" : [
+        "Je me casse !"
+      ],
+      "next": 9,
+      "label" : "Je me casse !"
+    },
 
 
-  {
-    "id": 8,
-    "background": "",
-    "sounds": "",
-    "text": [
-      "Je me casse !"
-    ],
-    "next": 9
-  },
 
-
-
-  {
-    "id": 9,
-    "background": "",
-    "sounds": "",
-    "text": [
-      "maman : tu t'es fait virer ! t'es vraiment un gros naze !",
-      "maman : Bon à rien ! tu va faire quoi de ta vie maintenant ? ",
-      "maman : par chance le supermarché recrute, tu ferais mieux d'y aller !",
-      "Ecouter ta mère ?"
-    ],
-    "choices": {
-      "a": {
-        "label": "oui",
-        "next": 10
-      },
-      "b": {
-        "label": "non",
-        "next": 11
-      }
+    {
+      "id": 9,
+      "ending" : false,
+      "background" : "",
+      "sounds" : "",
+      "text" : [
+        "maman : tu t'es fait virer ! t'es vraiment un gros naze !",
+        "maman : Bon à rien ! tu va faire quoi de ta vie maintenant ? ",
+        "maman : par chance le supermarché recrute, tu ferais mieux d'y aller !"
+      ],
+      "choices" : {
+        "a" : { "label" : "Oui maman", "next" : 10 },
+        "b" : { "label" : "Tg grosse conne", "next" : 11 }
+      } 
+    },
+    {
+      "id": 999,
+      "ending": true,
+      "text": [
+        "La partie s'arrête ici. N'hésitez pas à recommencer pour débloquer les deux autres fins !"
+      ],
+      "label" : "Oui je veux recommencer !"
     }
   },
-
-
 
   {
     "id": 10,
@@ -226,7 +221,8 @@
       "Vous avez terminé, Bravo !",
       "Réalisé par Maxime Oger et Hector Travaillé"
     ],
-    "next": 0
+     "next" : 999,
+      "label" : "Trop bien !"
   }
 
 
