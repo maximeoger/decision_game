@@ -50,7 +50,7 @@ class Story {
       let currentTxt = document.querySelectorAll(".Output__renderedText")
       currentTxt[cursor].classList.add("--visible")
 
-      output_txt.scrollTop += (currentTxt[cursor].clientHeight + 5)
+      output_txt.scrollTop += (currentTxt[cursor].clientHeight + 2)
 
       if(cursor === obj.text.length - 1){
         clearInterval(timer)
