@@ -37,7 +37,6 @@
   },
 
 
-
   {
     "id": 2,
     "background": "",
@@ -151,7 +150,11 @@
     "background": "",
     "sounds": "",
     "text": [
-      "Bravo ! tu reste dans la meme boite de merde, mais en tant qu'homme de ménage"
+      "Patron : C'est ce que je préfère, toi je vais faire en sorte que tu souffres, c'est un affront que tu me fais.",
+      "Titouan : Je suis désolé, je ne sais pas ce qu'il s'est passé..",
+      "ça y est Titouan pleure..on aurait jamais du faire ça, tout est de sa faute !",
+      "Patron : Vas voir la secrétaire, je te garde mais tu feras que les cafés et le ménage, ça sera ta punition pour m'avoir parlé comme ça !",
+      "On est obligé d'accepter..Tout est de ta faute"
     ]
   },
 
@@ -198,7 +201,10 @@
     "background": "",
     "sounds": "",
     "text": [
-      "Bravo tu es maintenant caissier dans un supermarché"
+      "Titouan : Mère..je ferais tout pour toi, je trouve un autre boulot et on pourra manger.",
+      "Mère : J’y compte bien ! Idiot tu m’as toujours déçu, tu as toujours été un déchet pour moi.",
+      "Titouan : Je suis désolé..",
+      "Maintenant Titouan n’a pas d’autre choix que de rester avec sa mère parce qu’elle ne travaille pas. Il va bosser, je ne sais pas..dans un supermarché, tout est de sa faute de toute façon."
     ],
     "next": 0
   },
@@ -209,7 +215,8 @@
     "background": "",
     "sounds": "",
     "text": [
-      "Bravo tu es maintenant pêcheur au Laos et tu vies grace au restaurant que tu as monté avec ta femme rencontrée sur place, tu est libre"
+      "Mère, tu arrêtes ! arrêtes de me traiter de bon à rien ! Arrêtes de m'insulter tout les jours ! Arrêtes de dire ce que je dois faire !",
+      ""
     ],
     "next": 0
   }
