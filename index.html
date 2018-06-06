@@ -18,16 +18,9 @@
   <section class="Game">
     <div class="Game__container">
 
-      <div class="Output">
-
-        <div class="Svg">
-            <div class="Svg__Container">
-                <img src="img/ui6.jpg" alt="">
-              </div>
-        </div>
-        
-        <h1 class="Output__title">Les choix</h1>
-        <p class="Output__text">La vie est un choix de circonstances et personne n'as de pouvoir sur les circonstances. <br> Mais chacun en a sur ces choix ...</p>
+      <div class="Game__mainMenu">
+          <h1 class="Output__title">Les choix</h1>
+          <p class="Output__text">La vie est un choix de circonstances et personne n'as de pouvoir sur les circonstances. <br> Mais chacun en a sur ces choix ...</p>
         <button id="component-1" class="button button--1 Output__btn startBtn">
           Commencer l'aventure
           <span class="button__container">
@@ -41,6 +34,16 @@
           </span>
         </button>
       </div>
+
+      <div class="Game__imgContainer">
+        <img class="Game__img" src="/img/ui6.jpg">
+      </div>
+      
+      <div class="Output">
+        <div class="Output__txt"></div>
+        <div class="Output__btnsContainer"></div>
+      </div>
+      
     </div>
   </section>
   <script src="./src/assets/js/Line.js"></script>
@@ -51,9 +54,7 @@
   <script>
     var blur = document.querySelector('button');
     var img = document.querySelector('.Svg__Container');
-
-    blur.addEventListener('click', function() {
-
+      blur.addEventListener('click', function() {
     });
   </script>
 

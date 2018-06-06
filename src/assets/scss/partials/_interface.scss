@@ -1,14 +1,25 @@
 body{
-    background: #191919;
+    background: #4763b6;
 }
 .Game{
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
     &__container{
         width: 50vw;
         margin: 0 auto;
+    }
+
+    &__imgContainer{
+    }
+
+    &__img{
+        height: 350px;
+    }
+    &__mainMenu{
+        position: absolute;
     }
 }
 .Output{
@@ -20,8 +31,9 @@ body{
         font-family: "Oswald-SemiBold";
         font-size: 37px;
     }
-    &__text{
-        margin-top: 170px;
+    &__txt{
+        overflow: auto;
+        height: 150px;
         font-family: "Quattrocento-regular";
         font-size: 16px;
         text-align: center;
@@ -30,8 +42,10 @@ body{
     &__renderedText{
         margin-top: 25px;
     }
+    &__btnsContainer{
+        height: 40px;
+    }
     &__btn{
-        //margin-top: 170px;
         color: #ffffff;
         width: 226px;
         height: 40px;
@@ -41,7 +55,5 @@ body{
         font-family: "Oswald-Regular";
         font-size: 16px;
     }
-    &__renderedChoicesBox{
-        margin-top: 25px;
-    }
+    
 }

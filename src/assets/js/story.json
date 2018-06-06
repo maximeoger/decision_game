@@ -2,6 +2,7 @@
 
     {
       "id": 0,
+      "ending" : false,
       "text" : [
         "Voici Titouan, 32 ans. un jeune homme sans histoire, bon élève et travaille dans une grande boîte",
         "Là il attend sa mère je crois, il doit pleurer encore, je dis encore parce que là c’est le seul moment qu’il a “ juste à lui “ comme il dit, c’est parce que sa mère habite avec lui peut être.",
@@ -9,13 +10,15 @@
         "Bref..à mince j’ai oublié de me présenter je suis le narrateur bienvenue à toi dans l’histoire. Nous sommes et bien dans la tête de titouan, simple comme bonjour.",
         "Dormons un peu, on a du boulot demain."
       ],
-      "next" : 1
+      "next" : 1,
+      "label" : "Oui au lit !"
     },
-  
+    
 
 
     {
       "id": 1,
+      "ending" : false,
       "background" : "",
       "sounds" : "",
       "text" : [
@@ -32,6 +35,7 @@
 
     {
       "id": 2,
+      "ending" : false,
       "background" : "",
       "sounds" : "",
       "text" : [
@@ -47,18 +51,21 @@
 
     {
       "id": 3,
+      "ending" : false,
       "background" : "",
       "sounds" : "",
       "text" : [
         "10h je sors du lit"
       ],
-      "next" : 4
+      "next" : 4,
+      "label" : "C'est parti !"
     },
 
 
 
     {
       "id": 4,
+      "ending" : false,
       "background" : "",
       "sounds" : "",
       "text" : [
@@ -76,12 +83,14 @@
 
     {
       "id": 5,
+      "ending" : false,
       "background" : "",
       "sounds" : "",
       "text" : [
         "la journée se passe comme d'hab"
       ],
-      "next" : 1
+      "next" : 1,
+      "label" : "Au dodo"
     },
 
 
@@ -89,6 +98,7 @@
 
     {
       "id": 6,
+      "ending" : false,
       "background" : "",
       "sounds" : "",
       "text" : [
@@ -105,40 +115,45 @@
 
     {
       "id": 7,
-      "ending" : true,
+      "ending" : false,
       "background" : "",
       "sounds" : "",
       "text" : [
         "Bravo ! tu reste dans la meme boite de merde, mais en tant qu'homme de ménage"
-      ]
+      ],
+      "next": 999,
+      "label" : "Trop pourri >:("
     },
 
+    
 
     {
       "id": 8,
+      "ending" : false,
       "background" : "",
       "sounds" : "",
       "text" : [
         "Je me casse !"
       ],
-      "next": 9
+      "next": 9,
+      "label" : "Je me casse !"
     },
 
 
 
     {
       "id": 9,
+      "ending" : false,
       "background" : "",
       "sounds" : "",
       "text" : [
         "maman : tu t'es fait virer ! t'es vraiment un gros naze !",
         "maman : Bon à rien ! tu va faire quoi de ta vie maintenant ? ",
-        "maman : par chance le supermarché recrute, tu ferais mieux d'y aller !",
-        "Ecouter ta mère ?"
+        "maman : par chance le supermarché recrute, tu ferais mieux d'y aller !"
       ],
       "choices" : {
-        "a" : { "label" : "oui", "next" : 10 },
-        "b" : { "label" : "non", "next" : 11 }
+        "a" : { "label" : "Oui maman", "next" : 10 },
+        "b" : { "label" : "Tg grosse conne", "next" : 11 }
       } 
     },
 
@@ -146,24 +161,37 @@
 
     {
       "id": 10,
-      "ending" : true,
+      "ending" : false,
       "background" : "",
       "sounds" : "",
       "text" : [
         "Bravo tu es maintenant caissier dans un supermarché"
       ],
-      "next" : 0
+      "next" : 999,
+      "label" : "Trop nul :("
     }, 
 
     {
       "id": 11,
-      "ending" : true,
+      "ending" : false,
       "background" : "",
       "sounds" : "",
       "text" : [
         "Bravo tu es maintenant pêcheur au Laos et tu vies grace au restaurant que tu as monté avec ta femme rencontrée sur place, tu est libre"
       ],
-      "next" : 0
+      "next" : 999,
+      "label" : "Trop bien !"
+    },
+
+
+
+    {
+      "id": 999,
+      "ending": true,
+      "text": [
+        "La partie s'arrête ici. N'hésitez pas à recommencer pour débloquer les deux autres fins !"
+      ],
+      "label" : "Oui je veux recommencer !"
     }
 
 

@@ -1,8 +1,8 @@
-body {
-  background-color: #4763B6;
-  height: 100%;
-  width: 100%;
-}
+@import './global/_fonts.scss';
+@import './global/_reset.scss';
+@import './partials/_interface.scss';
+
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -29,6 +29,7 @@ body {
 	position: absolute;
 }
 
+/*
 .Svg {
   margin-top: 2%;
   width: 100vw;
@@ -44,7 +45,7 @@ body {
     }
   }
 }
-
+*/
 .section {
   color: white;
   margin: 200px auto;
