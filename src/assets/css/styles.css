@@ -97,6 +97,10 @@ body {
 .Output {
   color: #ffffff;
   width: 100%; }
+  .Output__renderedChoicesBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
   .Output__txt {
     overflow: scroll;
     scroll-behavior: smooth;
@@ -248,5 +252,11 @@ body {
 
 ::-webkit-scrollbar {
   display: none; }
+
+  .Output__renderedChoicesBox {
+    width: 100%;
+display: flex;
+justify-content: space-around;
+  }
 
 /*# sourceMappingURL=styles.css.map */
