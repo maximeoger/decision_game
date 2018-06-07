@@ -1,4 +1,5 @@
 # histoire interactive
 
-commande pour activer sass :
-`node-sass -w src/assets/scss/styles.scss -o src/assets/css`
+Ce projet est une histoire interactive réalisée à HETIC. 
+
+https://maximeoger.github.io/decision_game/
