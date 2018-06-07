@@ -101,6 +101,10 @@ body {
     position: absolute;
     z-index: 999;
     text-align: center; }
+  .Game__soundBtn {
+    border: none;
+    background-color: none;
+    border-radius: 0px; }
 
 .Output {
   color: #ffffff;
@@ -115,10 +119,9 @@ body {
     line-height: 24px;
     position: relative; }
   .Output__renderedText {
-    margin-top: 25px;
+    padding: 50px 0;
     opacity: 0;
-    transition: all ease-out .2s;
-    margin-bottom: 25px; }
+    transition: all ease-out .2s; }
   .Output__btnsContainer {
     height: 40px;
     margin-top: 25px; }

@@ -40,7 +40,6 @@ class Story {
     let statement
 
     output_txt.scrollTop = 0;
-
     for (let i=0; i <= obj.text.length - 1 ; i++) {
       statement = `<p class="Output__renderedText"> ${ obj.text[i] } </p>`
       output_txt.innerHTML += statement
@@ -50,7 +49,11 @@ class Story {
       let currentTxt = document.querySelectorAll(".Output__renderedText")
       currentTxt[cursor].classList.add("--visible")
       
-      output_txt.scrollTop += (currentTxt[cursor].clientHeight + 5)
+      if(cursor >= 1){
+        output_txt.scrollTop += (currentTxt[cursor].clientHeight)
+      console.log(currentTxt[cursor].clientHeight)
+      }
+      
 
       if(cursor === obj.text.length - 1){
         clearInterval(timer)
@@ -144,7 +147,7 @@ class Story {
 
       }
       cursor++
-    }, 1500)
+    }, 3000)
 
   }
 
@@ -159,7 +162,39 @@ class Story {
       }
     }
   }
+}
+
+class Audio {
+
+  constructor(){
+    this.toggleSound()
+  }
+
+  toggleSound(){
+    let audioBtn = document.querySelector('.Game__soundBtn');
+    audioBtn.addEventListener('click', () => {
+      this.mute()
+    })
+  }
+
+  mute(){
+    let audio = document.querySelector('.Game__music')
+
+    if(audio.muted === true) {
+      audio.muted = false;
+      console.log(audio.muted)
+    }else{
+      audio.muted = true;
+      console.log(audio.muted)
+    }
+    
+  }
+}
+
+class Loader {
 
 }
 
+let loader = new Loader()
+let audio = new Audio()
 let story = new Story()

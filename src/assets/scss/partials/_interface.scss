@@ -49,6 +49,14 @@ body{
         z-index: 999;
         text-align: center;
     }
+    &__audio{
+
+    }
+    &__soundBtn{
+        border: none;
+        background-color: none;
+        border-radius: 0px;
+    }
 }
 .Output{
     color: #ffffff;
@@ -58,7 +66,7 @@ body{
        // padding-top: 42px;
         overflow: scroll;
         scroll-behavior: smooth;
-        height: 150px;
+        height: 148px;
         font-family: "Quattrocento-regular";
         font-size: 16px;
         text-align: center;
@@ -67,10 +75,9 @@ body{
     }
 
     &__renderedText{
-        margin-top: 25px;
+        padding: 50px 0;
         opacity: 0;
         transition: all ease-out .2s;
-        margin-bottom: 25px;
     }
 
     &__btnsContainer{
