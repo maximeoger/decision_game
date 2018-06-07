@@ -34,7 +34,8 @@ class Story {
 
   // reçois le fichier JSON (data), l'index d'un objet correspondant à une situation (obj) et affiche les données dans le dom
   render(data, obj) {
-    document.querySelector('body').style.backgroundColor = obj.color
+    document.querySelector('body').style.background = obj.background
+    console.log(document.querySelector('body').style.background)
     document.querySelector('.Game__img').setAttribute("src", obj.image)
     let output_txt = document.querySelector('.Output__txt')
     let output_btns = document.querySelector(".Output__btnsContainer")
@@ -44,6 +45,8 @@ class Story {
     let statement
 
     output_txt.scrollTop = 0;
+    console.log(output_txt.scrollTop)
+
     for (let i=0; i <= obj.text.length - 1 ; i++) {
       statement = `<p class="Output__renderedText"> ${ obj.text[i] } </p>`
       output_txt.innerHTML += statement
@@ -130,16 +133,19 @@ class Audio {
 
   toggleSound(){
     let audioBtn = document.querySelector('.Game__soundBtn');
+    let icon = document.getElementById('soundIcon');
     let audio = document.querySelector('.Game__music');
 
     audioBtn.addEventListener('click', () => {
 
       if(audio.muted === true) {
         audio.muted = false;
-        console.log(audio.muted)
+        icon.classList.add('fa-volume-up')
+        icon.classList.remove('fa-volume-off')
       }else{
         audio.muted = true;
-        console.log(audio.muted)
+        icon.classList.remove('fa-volume-up')
+        icon.classList.add('fa-volume-off')
       }
 
     })

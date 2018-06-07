@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./src/assets/css/styles.css">
   <title>Les aventures de  Titouan</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 </head>
 
@@ -16,8 +17,8 @@
   <section class="Game">
 
       <div class="Game__mainMenu">
-          <h1 class="Game__title">" Ma vie est un étron "</h1>
-          <p class="Game__text">La vie est un choix de circonstances et personne n'as de pouvoir sur les circonstances. <br> Mais chacun en a sur ces choix ...</p>
+          <h1 class="Game__title">La vie de Titouan</h1>
+          <p class="Game__text">Cette histoire est celle de Titouan. Un jeune homme ordinaire qui vit chez sa mère et est coincé dans un travail qui ne le passionne pas trop.. <br> Dans cette histoire, les choix que vous ferez pour lui auront un impact sur son destin.</p>
         <button id="component-1" class="button button--1 Game__btn startBtn">
           Commencer l'aventure
           <span class="button__container">
@@ -33,7 +34,9 @@
       </div>
 
     <div class="Game__audio">
-     <!-- <button class="Game__soundBtn">son</button> -->
+       <button class="Game__soundBtn">
+         <i id="soundIcon" class="fas fa-volume-up fa-2x"></i>
+       </button>
       <audio src="src/assets/audio/P  Lewis - patterns.mp3" volume="0.5" autoplay="autoplay" type="audio/mpeg" class="Game__music"></audio>
       <audio src="" class="Game__ambientSound"></audio>
     </div>
