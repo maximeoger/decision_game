@@ -68,7 +68,6 @@ body{
     }
 
     &__txt{
-       // padding-top: 42px;
         overflow: scroll;
         scroll-behavior: smooth;
         height: 148px;
@@ -77,6 +76,10 @@ body{
         text-align: center;
         line-height: 24px;
         position: relative;
+
+        @include for-size(tablet-portrait-up){
+            padding: 0 150px;
+        }
     }
 
     &__renderedText{

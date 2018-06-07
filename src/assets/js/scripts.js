@@ -22,6 +22,7 @@ class Story {
     }.bind(this))
   }
 
+  // vide le contenu HTML des balises déstinnées à accueilir le contenu des situations
   clearOutput() {
     document.querySelector('.Output__txt').innerHTML = ""
     document.querySelector('.Output__btnsContainer').innerHTML = ""
