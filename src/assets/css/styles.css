@@ -68,7 +68,8 @@ table {
   border-spacing: 0; }
 
 body {
-  background: #4763b6; }
+  background: #4763b6;
+  transition: all ease-out .4s; }
 
 .Game {
   height: 100vh;
@@ -96,15 +97,24 @@ body {
   .Game__btn {
     margin-top: 50px; }
   .Game__img {
-    height: 200px; }
+    height: 350px; }
   .Game__mainMenu {
     position: absolute;
     z-index: 999;
     text-align: center; }
   .Game__soundBtn {
     border: none;
-    background-color: none;
-    border-radius: 0px; }
+    background: none;
+    border-radius: 0px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 42px;
+    height: 42px;
+    color: #ffffff;
+    cursor: pointer; }
+  .Game__soundBtn:focus {
+    outline: 0; }
 
 .Output {
   color: #ffffff;

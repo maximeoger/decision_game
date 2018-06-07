@@ -1,10 +1,10 @@
 body{
     background: #4763b6;
+    transition: all ease-out .4s;
 }
 .Game{
     height: 100vh;
     display: flex;
-    //background: #191919;
     color: #fff;
     flex-direction: column;
     justify-content: space-around;
@@ -41,7 +41,7 @@ body{
     }
 
     &__img{
-        height: 200px;
+        height: 350px;
     }
 
     &__mainMenu{
@@ -50,12 +50,22 @@ body{
         text-align: center;
     }
     &__audio{
-
+        
     }
     &__soundBtn{
         border: none;
-        background-color: none;
+        background: none;
         border-radius: 0px;
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        width: 42px;
+        height: 42px;
+        color: #ffffff; 
+        cursor: pointer;
+    }
+    &__soundBtn:focus{
+        outline:0;
     }
 }
 .Output{
