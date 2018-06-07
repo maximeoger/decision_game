@@ -1,6 +1,8 @@
 class Story {
 
   constructor() {
+    fetch('./src/assets/audio/P  Lewis - patterns.mp3')
+    .then((response) => console.log(response))
     this.startGame()
   }
 
@@ -13,6 +15,7 @@ class Story {
     });
   }
 
+  
   // appel fetch pour récupérer les données dans le story.json
   getData() {
     fetch('./src/assets/js/story.json')
@@ -53,10 +56,8 @@ class Story {
       
       if(cursor >= 1){
         output_txt.scrollTop += (currentTxt[cursor].clientHeight)
-      console.log(currentTxt[cursor].clientHeight)
       }
       
-
       if(cursor === obj.text.length - 1){
         clearInterval(timer)
 
@@ -64,31 +65,8 @@ class Story {
 
           output_btns.innerHTML = `
           <div class="Output__renderedChoicesBox">
-
-              <button data-choice="a" id="component-1" class="button button--1 Output__btn startBtn">
-              ${obj.choices.a.label}
-              <span class="button__container">
-                <span class="circle top-left"></span>
-                <span class="circle top-left"></span>
-                <span class="circle top-left"></span>
-                <span class="button__bg"></span>
-                <span class="circle bottom-right"></span>
-                <span class="circle bottom-right"></span>
-                <span class="circle bottom-right"></span>
-              </span>
-            </button>
-            <button data-choice="b" id="component-1" class="button button--1 Output__btn startBtn">
-            ${obj.choices.b.label}
-            <span class="button__container">
-              <span class="circle top-left"></span>
-              <span class="circle top-left"></span>
-              <span class="circle top-left"></span>
-              <span class="button__bg"></span>
-              <span class="circle bottom-right"></span>
-              <span class="circle bottom-right"></span>
-              <span class="circle bottom-right"></span>
-            </span>
-          </button>
+              <button data-choice="a" id="component-1" class="button button--1 Output__btn startBtn">${obj.choices.a.label}</button>
+              <button data-choice="b" id="component-1" class="button button--1 Output__btn startBtn">${obj.choices.b.label}</button>
           </div>
           `
           document.querySelector('.Output__btn[data-choice="a"]').addEventListener('click', () => {
@@ -106,19 +84,8 @@ class Story {
         }else if (obj.ending===true) {
 
           output_btns.innerHTML = `
-            <button id="component-1" class="button button--1 Output__btn restartBtn">
-            ${obj.label}
-            <span class="button__container">
-              <span class="circle top-left"></span>
-              <span class="circle top-left"></span>
-              <span class="circle top-left"></span>
-              <span class="button__bg"></span>
-              <span class="circle bottom-right"></span>
-              <span class="circle bottom-right"></span>
-              <span class="circle bottom-right"></span>
-            </span>
-          </button>
-        `
+            <button id="component-1" class="button button--1 Output__btn restartBtn">${obj.label}</button>
+          `
       document.querySelector('.restartBtn').addEventListener('click', () => {
         this.clearOutput()
         return this.showMenu()
@@ -126,18 +93,7 @@ class Story {
 
         } else {
           output_btns.innerHTML = `
-          <button id="component-1" class="button button--1 Output__btn nextBtn">
-              ${obj.label}
-              <span class="button__container">
-                <span class="circle top-left"></span>
-                <span class="circle top-left"></span>
-                <span class="circle top-left"></span>
-                <span class="button__bg"></span>
-                <span class="circle bottom-right"></span>
-                <span class="circle bottom-right"></span>
-                <span class="circle bottom-right"></span>
-              </span>
-            </button>
+            <button id="component-1" class="button button--1 Output__btn nextBtn">${obj.label}</button>
           `
           document.querySelector('.nextBtn').addEventListener('click', () => {
             this.clearOutput()
@@ -154,6 +110,7 @@ class Story {
 
   showMenu() {
     document.querySelector('.Game__mainMenu').style.display = ""
+    document.querySelector('.Game__img').setAttribute("src", "")
   }
 
   getNextStep(data, next){
@@ -173,29 +130,22 @@ class Audio {
 
   toggleSound(){
     let audioBtn = document.querySelector('.Game__soundBtn');
+    let audio = document.querySelector('.Game__music');
+
     audioBtn.addEventListener('click', () => {
-      this.mute()
+
+      if(audio.muted === true) {
+        audio.muted = false;
+        console.log(audio.muted)
+      }else{
+        audio.muted = true;
+        console.log(audio.muted)
+      }
+
     })
   }
 
-  mute(){
-    let audio = document.querySelector('.Game__music')
-
-    if(audio.muted === true) {
-      audio.muted = false;
-      console.log(audio.muted)
-    }else{
-      audio.muted = true;
-      console.log(audio.muted)
-    }
-    
-  }
 }
 
-class Loader {
-
-}
-
-let loader = new Loader()
 let audio = new Audio()
 let story = new Story()
