@@ -5,11 +5,11 @@
     "image" : "src/assets/img/closed_door.png",
     "background" : "",
     "text": [
-      "<em class='narrator'> Voici Titouan, 32 ans. un jeune homme sans histoire, bon élève et travaille dans une grande boîte </em>",
+      "<em class='narrator'> Voici Steve, 32 ans. un jeune homme sans histoire, bon élève et travaille dans une grande boîte </em>",
       "<em class='narrator'> Là il attend sa mère je crois, il doit pleurer encore, je dis encore parce que là c’est le seul moment qu’il a “ juste à lui “ comme il dit, c’est parce que sa mère habite avec lui peut être. </em>",
       "<em class='narrator'> Quel fils pleure à cause de sa mère ? </em>",
-      "<em class='narrator'> Bref..à mince j’ai oublié de me présenter je suis le narrateur bienvenue à toi dans l’histoire. Nous sommes et bien dans la tête de titouan, simple comme bonjour. <em>",
-      "<em class='character'>Titouan :  </em>Dormons un peu, on a du boulot demain. "
+      "<em class='narrator'> Bref..à mince j’ai oublié de me présenter je suis le narrateur bienvenue à toi dans l’histoire. Nous sommes et bien dans la tête de Steve, simple comme bonjour. <em>",
+      "<em class='character'>Steve :  </em>Dormons un peu, on a du boulot demain. "
     ],
     "next": 1,
     "label" : "Au lit !"
@@ -22,9 +22,9 @@
     "sounds": "",
     "text": [
       "<em class='narrator'> 7:00 - Le réveil sonne.. </em>",
-      "<em class='narrator'> Titouan dort encore à poings fermés </em>",
-      "<em class='narrator'> Vite Titouan doit se réveiller, ça sonne depuis 10min. </em>",
-      "<em class='character'> Titouan :  </em>Mère risque encore de s'énerver. Le boulot commence à 11h aujourd’hui mais je pourrais me lever plus tôt pour faire bonnes impressions comme toujours"
+      "<em class='narrator'> Steve dort encore à poings fermés </em>",
+      "<em class='narrator'> Vite Steve doit se réveiller, ça sonne depuis 10min. </em>",
+      "<em class='character'> Steve :  </em>Mère risque encore de s'énerver. Le boulot commence à 11h aujourd’hui mais je pourrais me lever plus tôt pour faire bonnes impressions comme toujours"
     ],
     "choices": {
       "a": {
@@ -44,9 +44,9 @@
     "background" : "",
     "sounds": "",
     "text": [
-      "<em class='narrator'> En route pour Slave Computer où Titouan bosse depuis maintenant 10 ans c’est toute sa vie </em>",
+      "<em class='narrator'> En route pour Slave Computer où Steve bosse depuis maintenant 10 ans c’est toute sa vie </em>",
       "<em class='narrator'> il doit à chaque fois donner le meilleur de soi-même pour se faire reconnaître, ah.. il fait beau aujourd’hui </em>",
-      "<em class='character'> Titouan :  </em> Je vais au travail comment ?"
+      "<em class='character'> Steve :  </em> Je vais au travail comment ?"
     ],
     "choices": {
       "a": {
@@ -66,9 +66,9 @@
     "background" : "",
     "sounds": "",
     "text": [
-      "<em class='character'> Titouan :  </em> Je commence à 11h ça ne sert à rien d’arriver autant en avance.",
+      "<em class='character'> Steve :  </em> Je commence à 11h ça ne sert à rien d’arriver autant en avance.",
       "<em class='character'> Mère :  </em> Il faut que tu partes tout de suite bon à rien ! Depeches toi abruti!",
-      "<em class='character'> Titouan :  </em> oui Mère..tout de suite mère.",
+      "<em class='character'> Steve :  </em> oui Mère..tout de suite mère.",
       "<em class='narrator'> Ahlala l’histoire d’amour entre ces deux personnes qu’est ce que c’est beau. </em>"
     ],
     "next": 4,
@@ -83,7 +83,7 @@
 
     "text": [
       "<em class='character'> Patron : </em> Qu’est ce que tu as foutu on t’attendait à la réunion tu n’étais pas là idiot !",
-      "<em class='character'> Titouan : </em> Je ne comprend pas vous m’avez dit hier que je commençais à 11h, je ne comprend pas",
+      "<em class='character'> Steve : </em> Je ne comprend pas vous m’avez dit hier que je commençais à 11h, je ne comprend pas",
       "<em class='character'> Patron : </em> Je te préviens, c'est la dernière fois !"
     ],
     "choices": {
@@ -104,14 +104,14 @@
     "background" : "",
     "sounds": "",
     "text": [
-      "<em class='character'> Titouan : </em> Bonjour tout le monde",
-      "<em class='character'> Patron : </em> Titouan tu es à l’heure, bien viens en réunion ça va commencer.",
-      "<em class='character'> Titouan : </em> Tiens une réunion on n’était pas au courant, bon allons-y.",
+      "<em class='character'> Steve : </em> Bonjour tout le monde",
+      "<em class='character'> Patron : </em> Steve tu es à l’heure, bien viens en réunion ça va commencer.",
+      "<em class='character'> Steve : </em> Tiens une réunion on n’était pas au courant, bon allons-y.",
       "<em class='narrator'> La réunion se passe…. </em>",
-      "<em class='character'> Patron : </em> Titouan maintenant tu bosses, tu bosses jamais c’est dingue allez plus vite que ça.",
-      "<em class='character'> Titouan : </em> Oui patron. Tout de suite patron.",
+      "<em class='character'> Patron : </em> Steve maintenant tu bosses, tu bosses jamais c’est dingue allez plus vite que ça.",
+      "<em class='character'> Steve : </em> Oui patron. Tout de suite patron.",
       "<em class='narrator'> Aaaah encore une bonne journée en perspective non ? Allez on fait ce que le boss à dit allez..  </em>",
-      "<em class='narrator'> Toute la journée Titouan travaille.. il finit toute ces journées à 22h.</em> ",
+      "<em class='narrator'> Toute la journée Steve travaille.. il finit toute ces journées à 22h.</em> ",
       "<em class='narrator' > Sa vie est modeste mais elle ne changera pas...n’est-ce pas ? </em>"
     ],
     "next": 1,
@@ -125,10 +125,10 @@
     "sounds": "",
     "text": [
       "<em class='character'> Patron : </em> pardon ? vous vous moquez de moi ?",
-      "<em class='character'> Titouan : </em> Vous m’avez entendu, je n’ai rien à me reprocher, c’est très simple.",
+      "<em class='character'> Steve : </em> Vous m’avez entendu, je n’ai rien à me reprocher, c’est très simple.",
       "<em class='character'> Patron : </em> je ne vous permet pas de me parler comme ça.",
-      "<em class='character'> Titouan : </em> Alors mais allez vous ###***###***###***",
-      "<em class='narrator' > Quoiiiiii ? Qu’est ce que Titouan a fait. On est foutu, foutu… Il faut s’excuser on ne peut pas faire ça… </em>"
+      "<em class='character'> Steve : </em> Alors mais allez vous ###***###***###***",
+      "<em class='narrator' > Quoiiiiii ? Qu’est ce que Steve a fait. On est foutu, foutu… Il faut s’excuser on ne peut pas faire ça… </em>"
     ],
     "choices": {
       "a": {
@@ -150,8 +150,8 @@
     "sounds": "",
     "text": [
       "<em class='character'> Patron : </em> C'est ce que je préfère, toi je vais faire en sorte que tu souffres, c'est un affront que tu me fais.",
-      "<em class='character'> Titouan : </em> Je suis désolé, je ne sais pas ce qu'il s'est passé..",
-      "<em class='narrator' > ça y est Titouan pleure..on aurait jamais du faire ça, tout est de sa faute ! </em>",
+      "<em class='character'> Steve : </em> Je suis désolé, je ne sais pas ce qu'il s'est passé..",
+      "<em class='narrator' > ça y est Steve pleure..on aurait jamais du faire ça, tout est de sa faute ! </em>",
       "<em class='character'> Patron : </em> Vas voir la secrétaire, je te garde mais tu feras que les cafés et le ménage, ça sera ta punition pour m'avoir parlé comme ça !",
       "<em class='narrator' > On est obligé d'accepter..Tout est de ta faute </em>"
     ],
@@ -197,10 +197,10 @@
     "background" : "",
     "sounds": "",
     "text": [
-      "<em class='character'> Titouan : </em> Mère.. je ferais tout pour toi, je trouve un autre boulot et on pourra manger.",
+      "<em class='character'> Steve : </em> Mère.. je ferais tout pour toi, je trouve un autre boulot et on pourra manger.",
       "<em class='character'> Mère : </em> J’y compte bien ! Idiot tu m’as toujours déçu, tu as toujours été un déchet pour moi.",
-      "<em class='character'> Titouan : </em> Je suis désolé..",
-      "<em class='narrator' > Maintenant Titouan n’a pas d’autre choix que de rester avec sa mère parce qu’elle ne travaille pas. Il va bosser, je ne sais pas..dans un supermarché, tout est de sa faute de toute façon. </em>"
+      "<em class='character'> Steve : </em> Je suis désolé..",
+      "<em class='narrator' > Maintenant Steve n’a pas d’autre choix que de rester avec sa mère parce qu’elle ne travaille pas. Il va bosser, je ne sais pas..dans un supermarché, tout est de sa faute de toute façon. </em>"
     ],
     "next": 999,
     "label" : "C'est la vie"
@@ -213,14 +213,14 @@
     "background" : "",
     "sounds": "",
     "text": [
-      "<em class='character'> Titouan : </em> Mère, tu arrêtes ! arrêtes de me traiter de bon à rien ! ",
-      "<em class='character'> Titouan : </em> Arrêtes de m'insulter tout les jours ! Arrêtes de dire ce que je dois faire !",
+      "<em class='character'> Steve : </em> Mère, tu arrêtes ! arrêtes de me traiter de bon à rien ! ",
+      "<em class='character'> Steve : </em> Arrêtes de m'insulter tout les jours ! Arrêtes de dire ce que je dois faire !",
       "<em class='character'> Mère : </em> Quoi ?",
-      "<em class='character'> Titouan : </em> J'aimerais vivre ma vie, avoir la liberté de faire des choix.",
-      "<em class='character'> Titouan : </em> Je n'ai pu vivre ma vie comme je la voulais",
-      "<em class='character'> Titouan : </em> Je pars Mère, pour toujours..Au revoir",
+      "<em class='character'> Steve : </em> J'aimerais vivre ma vie, avoir la liberté de faire des choix.",
+      "<em class='character'> Steve : </em> Je n'ai pu vivre ma vie comme je la voulais",
+      "<em class='character'> Steve : </em> Je pars Mère, pour toujours..Au revoir",
       "<em class='narrator'> ...( notre conscience change totalement) </em>",
-      "<em class='narrator'> Titouan part pour partir loin, très loin, là où il peut se refaire une nouvelle vie </em>",
+      "<em class='narrator'> Steve part pour partir loin, très loin, là où il peut se refaire une nouvelle vie </em>",
       "Vous avez terminé, Bravo !"
     ],
     "next" : 999,
