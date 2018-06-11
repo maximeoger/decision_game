@@ -70,13 +70,12 @@ body{
 }
 .Output{
     color: #ffffff;
-    width: 100%;
+    // width: 100%;
     &__renderedChoicesBox {
-      width: 100%;
-    display: flex;
-    justify-content: space-around;
+        //width: 100%;
+        display: flex;
+        justify-content: space-around;
     }
-
     &__txt{
         overflow: scroll;
         scroll-behavior: smooth;
@@ -86,23 +85,21 @@ body{
         text-align: center;
         line-height: 24px;
         position: relative;
-
+       // width: 70%;
         @include for-size(tablet-portrait-up){
-            padding: 0 150px;
+            padding: 0 100px;
         }
     }
-
     &__renderedText{
         padding: 50px 0;
         opacity: 0;
         transition: all ease-out .2s;
     }
-
     &__btnsContainer{
         height: 40px;
         margin-top: 25px;
+        //width: 70%;
     }
-
     &__btn{
         color: #ffffff;
         width: 226px;
@@ -113,7 +110,36 @@ body{
         font-family: "Oswald-Regular";
         font-size: 16px;
     }
+}
 
+.RenderBox{
+    display: flex;
+    justify-content: center;
+
+    &__container{
+        display: flex;
+        width: 100%;
+        @include for-size(tablet-portrait-up){
+            width: 70%;
+        }
+    }
+}
+.Controls{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 148px;
+    width: 32px;
+    &__icon{
+        cursor: pointer;
+        font-size: 24px;
+        opacity: 0.5;
+        transition: all ease-out 0.2s;
+    }
+    &__icon:hover{
+        opacity: 1;
+    }
 }
 .--visible{
     opacity: 1;

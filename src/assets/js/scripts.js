@@ -125,6 +125,19 @@ class Story {
   }
 }
 
+class Controls {
+
+  constructor(){
+    this.toggleControls()
+  }
+
+  toggleControls(){
+    let up = document.getElementById('up');
+    let down = document.getElementById('down');
+  }
+
+}
+
 class Audio {
 
   constructor(){

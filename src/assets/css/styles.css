@@ -117,10 +117,8 @@ body {
     outline: 0; }
 
 .Output {
-  color: #ffffff;
-  width: 100%; }
+  color: #ffffff; }
   .Output__renderedChoicesBox {
-    width: 100%;
     display: flex;
     justify-content: space-around; }
   .Output__txt {
@@ -134,7 +132,7 @@ body {
     position: relative; }
     @media (min-width: 770px) {
       .Output__txt {
-        padding: 0 150px; } }
+        padding: 0 100px; } }
   .Output__renderedText {
     padding: 50px 0;
     opacity: 0;
@@ -151,6 +149,31 @@ body {
     background: none;
     font-family: "Oswald-Regular";
     font-size: 16px; }
+
+.RenderBox {
+  display: flex;
+  justify-content: center; }
+  .RenderBox__container {
+    display: flex;
+    width: 100%; }
+    @media (min-width: 770px) {
+      .RenderBox__container {
+        width: 70%; } }
+
+.Controls {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 148px;
+  width: 32px; }
+  .Controls__icon {
+    cursor: pointer;
+    font-size: 24px;
+    opacity: 0.5;
+    transition: all ease-out 0.2s; }
+  .Controls__icon:hover {
+    opacity: 1; }
 
 .--visible {
   opacity: 1; }
