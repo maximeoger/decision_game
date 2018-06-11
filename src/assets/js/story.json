@@ -249,8 +249,7 @@
     "background" : "#4763B6",
     "ending": true,
     "text": [
-      "La partie s'arrête ici. N'hésitez pas à recommencer pour débloquer les deux autres fins !",
-      "Réalisé par Maxime Oger et Hector Travaillé"
+      "La partie s'arrête ici. N'hésitez pas à recommencer pour débloquer les deux autres fins !"
     ],
     "label" : "Oui je veux recommencer !"
   }
