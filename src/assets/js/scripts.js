@@ -4,6 +4,7 @@ class Story {
     fetch('./src/assets/audio/P  Lewis - patterns.mp3')
     .then((response) => console.log(response))
     this.startGame()
+    this.toggleControls()
   }
 
   // démarre le jeu
@@ -111,6 +112,32 @@ class Story {
 
   }
 
+
+  scroll(up, value){
+    let currentTxt = document.querySelectorAll(".Output__renderedText")
+    let output_txt = document.querySelector('.Output__txt')
+    if(up){
+      console.log('up')
+      output_txt.scrollTop += (value)
+      return
+    }
+    console.log('down')
+    output_txt.scrollTop -= (value)
+    return
+  }
+
+  toggleControls(){
+    console.log('active controls');
+    document.getElementById('up').addEventListener('click', () => {
+      this.scroll(up)
+    })
+
+    document.getElementById('down').addEventListener('click', () => {
+      this.scroll()
+    })
+
+  }
+
   showMenu() {
     document.querySelector('.Game__mainMenu').style.display = ""
     document.querySelector('.Game__img').setAttribute("src", "")
@@ -125,18 +152,6 @@ class Story {
   }
 }
 
-class Controls {
-
-  constructor(){
-    this.toggleControls()
-  }
-
-  toggleControls(){
-    let up = document.getElementById('up');
-    let down = document.getElementById('down');
-  }
-
-}
 
 class Audio {
 
