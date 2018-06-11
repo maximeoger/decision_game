@@ -162,7 +162,7 @@ body {
 
 .Controls {
   padding: 20px 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   height: 148px;

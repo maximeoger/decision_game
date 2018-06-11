@@ -5,12 +5,12 @@
     "image" : "src/assets/img/closed_door.png",
     "background" : "#4763B6",
     "text": [
-      "<em class='narrator'> Titouan est un jeune homme ordinaire sans histoire particulière.</em>",
+      "<em class='narrator'> Steve est un jeune homme ordinaire sans histoire particulière.</em>",
       "<em class='narrator'> Bon élève, il a toujours cherché à donner le meilleur de lui même dans son travail.</em>",
       "<em class='narrator'> Aujourd'hui notre héro à 32 ans et travaille comme employé ordinaire chez Slave Computing ...</em>",
       "<em class='narrator'> Son métier conciste à appuyer sur le même bouton toute la journée </em>",
       "<em class='narrator'> Et il vient de finir sa journée.<em>",
-      "<em class='character'>Titouan :  </em> Quelle journée ! J'ai hate de rentrer et de regarder ma série"
+      "<em class='character'>Steve :  </em> Quelle journée ! J'ai hate de rentrer et de regarder ma série"
     ],
     "next": 1,
     "label" : "Rentrer à la maison"
@@ -23,9 +23,9 @@
     "sounds": "",
     "text": [
       "<em class='narrator'> * 7:00 - Le réveil sonne *</em>",
-      "<em class='narrator'> Titouan dors encore, n'entend-il pas le réveil sonner ? </em>",
-      "<em class='narrator'> Vite Titouan doit se réveiller, ça sonne depuis 10min. </em>",
-      "<em class='character'> Titouan :  </em> 7:00 ? Le boulot ne commence qu'à 11h aujourd’hui."
+      "<em class='narrator'> Steve dors encore, n'entend-il pas le réveil sonner ? </em>",
+      "<em class='narrator'> Vite Steve doit se réveiller, ça sonne depuis 10min. </em>",
+      "<em class='character'> Steve :  </em> 7:00 ? Le boulot ne commence qu'à 11h aujourd’hui."
     ],
     "choices": {
       "a": {
@@ -45,8 +45,8 @@
     "background" : "#4763B6",
     "sounds": "",
     "text": [
-      "<em class='narrator'> Titouan est en route pour Slave Computing. Il y travaille depuis maintenant 10 ans, c'est pour ainsi dire 'toute sa vie' </em>",
-      "<em class='character'> Titouan :  </em> Il fait beau aujourd'hui, je pourrais aller au travail à pieds pour changer"
+      "<em class='narrator'> Steve est en route pour Slave Computing. Il y travaille depuis maintenant 10 ans, c'est pour ainsi dire 'toute sa vie' </em>",
+      "<em class='character'> Steve :  </em> Il fait beau aujourd'hui, je pourrais aller au travail à pieds pour changer"
     ],
     "choices": {
       "a": {
@@ -66,9 +66,9 @@
     "background" : "#4763B6",
     "sounds": "",
     "text": [
-      "<em class='character'> Titouan :  </em>Mais je commence à 11h, ça ne sert à rien d’arriver autant en avance.",
+      "<em class='character'> Steve :  </em>Mais je commence à 11h, ça ne sert à rien d’arriver autant en avance.",
       "<em class='character'> Mère :  </em> Il faut que tu partes tout de suite bon à rien ! Dépèches toi !",
-      "<em class='character'> Titouan :  </em> oui Mère..tout de suite mère.",
+      "<em class='character'> Steve :  </em> oui Mère..tout de suite mère.",
       "<em class='narrator'> Ce type de dialogue est devenu monnaie courrante au sein du foyer. </em>"
     ],
     "next": 4,
@@ -82,13 +82,13 @@
     "sounds": "",
 
     "text": [
-      "<em class='character'> Patron : </em> Titouan, quelle raison vous a permit de manquer la réunion de ce matin ?",
-      "<em class='character'> Titouan : </em> Je ne comprend pas vous m’avez dit hier que je commençais à 11h, je ne comprend pas",
+      "<em class='character'> Patron : </em> Steve, quelle raison vous a permit de manquer la réunion de ce matin ?",
+      "<em class='character'> Steve : </em> Je ne comprend pas vous m’avez dit hier que je commençais à 11h, je ne comprend pas",
       "<em class='character'> Patron : </em> Je vous ai envoyé un mail cette nuit pour vous prévenir de l'importance de cette réunion, vous ne lisez pas vos mails ?",
-      "<em class='character'> Titouan : </em> Si mais pas pendant la nuit",
-      "<em class='character'> Patron : </em> Me prennez-vous pour un idiot Titouan ?",
-      "<em class='character'> Titouan : </em> Non monsieur, jamais. Je dit juste que c'est important le sommeil",
-      "<em class='character'> Patron : </em> Un bon employé se doit de vouer corps et âme à son entreprise et même à travailler de nuit s'il le faut. Êtes-vous un bon employé Titouan ?"
+      "<em class='character'> Steve : </em> Si mais pas pendant la nuit",
+      "<em class='character'> Patron : </em> Me prennez-vous pour un idiot Steve ?",
+      "<em class='character'> Steve : </em> Non monsieur, jamais. Je dit juste que c'est important le sommeil",
+      "<em class='character'> Patron : </em> Un bon employé se doit de vouer corps et âme à son entreprise et même à travailler de nuit s'il le faut. Êtes-vous un bon employé Steve ?"
     ],
     "choices": {
       "a": {
@@ -108,14 +108,14 @@
     "background" : "#4763B6",
     "sounds": "",
     "text": [
-      "<em class='character'> Titouan : </em> Bonjour tout le monde",
-      "<em class='character'> Patron : </em> Titouan, vous êtes à l’heure, la réunion va commencer.",
-      "<em class='character'> Titouan : </em> * Tiens une réunion on était pas au courant, bon allons-y. *",
+      "<em class='character'> Steve : </em> Bonjour tout le monde",
+      "<em class='character'> Patron : </em> Steve, vous êtes à l’heure, la réunion va commencer.",
+      "<em class='character'> Steve : </em> * Tiens une réunion on était pas au courant, bon allons-y. *",
       "<em class='narrator'> La réunion se passe…</em>",
-      "<em class='character'> Patron : </em> Au travail maintenant, et tâchez de vous montrer plus productif que ces 10 dernières années Titouan",
-      "<em class='character'> Titouan : </em> Oui patron. Tout de suite patron.",
+      "<em class='character'> Patron : </em> Au travail maintenant, et tâchez de vous montrer plus productif que ces 10 dernières années Steve",
+      "<em class='character'> Steve : </em> Oui patron. Tout de suite patron.",
       "<em class='narrator'> Une journée habituelle en perspective </em>",
-      "<em class='narrator'> Toute la journée Titouan travaille... jusqu'à 22h !</em> "
+      "<em class='narrator'> Toute la journée Steve travaille... jusqu'à 22h !</em> "
     ],
     "next": 1,
     "label" : "On rentre à la maison"
@@ -128,10 +128,10 @@
     "sounds": "",
     "text": [
       "<em class='character'> Patron : </em> pardon ? vous vous moquez de moi ?",
-      "<em class='character'> Titouan : </em> Vous m’avez entendu, je n’ai rien à me reprocher, c’est très simple.",
+      "<em class='character'> Steve : </em> Vous m’avez entendu, je n’ai rien à me reprocher, c’est très simple.",
       "<em class='character'> Patron : </em> Je ne vous permet pas de me parler comme ça. Des dizaines de personnes sont prêtes à prendre votre place vous savez ?",
-      "<em class='character'> Titouan : </em> Et bien je suis prêt à leur laisser ma place alors !",
-      "<em class='narrator' > Quoiiiiii ? Qu’est ce que Titouan a fait ?! Il faut s’excuser on ne peut pas faire ça… </em>"
+      "<em class='character'> Steve : </em> Et bien je suis prêt à leur laisser ma place alors !",
+      "<em class='narrator' > Quoiiiiii ? Qu’est ce que Steve a fait ?! Il faut s’excuser on ne peut pas faire ça… </em>"
     ],
     "choices": {
       "a": {
@@ -169,7 +169,7 @@
     "background" : "",
     "sounds" : "",
     "text" : [
-      "<em class='character'> Titouan :  </em> Oui vous m'avez entendu ! Je ne veux plus travailler pour vous, vous n'êtes qu'un monstre égoïste qui ne pense pas au bien être de ses employés !"
+      "<em class='character'> Steve :  </em> Oui vous m'avez entendu ! Je ne veux plus travailler pour vous, vous n'êtes qu'un monstre égoïste qui ne pense pas au bien être de ses employés !"
     ],
     "next": 9,
     "label" : "Je me casse !"
@@ -199,10 +199,10 @@
     "background" : "#4763B6",
     "sounds": "",
     "text": [
-      "<em class='character'> Titouan : </em> Mère.. je ferais tout pour toi, je trouve un autre boulot et on pourra manger.",
+      "<em class='character'> Steve : </em> Mère.. je ferais tout pour toi, je trouve un autre boulot et on pourra manger.",
       "<em class='character'> Mère : </em> J’y compte bien ! Idiot tu m’as toujours déçu, tu as toujours été un déchet pour moi.",
-      "<em class='character'> Titouan : </em> Je suis désolé..",
-      "<em class='narrator' > Maintenant Titouan n’a pas d’autre choix que de rester avec sa mère parce qu’elle ne travaille pas. Il va bosser, je ne sais pas..dans un supermarché, tout est de sa faute de toute façon. </em>"
+      "<em class='character'> Steve : </em> Je suis désolé..",
+      "<em class='narrator' > Maintenant Steve n’a pas d’autre choix que de rester avec sa mère parce qu’elle ne travaille pas. Il va bosser, je ne sais pas..dans un supermarché, tout est de sa faute de toute façon. </em>"
     ],
     "next": 999,
     "label" : "C'est la vie"
@@ -215,14 +215,14 @@
     "background" : "#4763B6",
     "sounds": "",
     "text": [
-      "<em class='character'> Titouan : </em> Mère, tu arrêtes ! arrêtes de me traiter de bon à rien ! ",
-      "<em class='character'> Titouan : </em> Arrêtes de m'insulter tout les jours ! Arrêtes de dire ce que je dois faire !",
+      "<em class='character'> Steve : </em> Mère, tu arrêtes ! arrêtes de me traiter de bon à rien ! ",
+      "<em class='character'> Steve : </em> Arrêtes de m'insulter tout les jours ! Arrêtes de dire ce que je dois faire !",
       "<em class='character'> Mère : </em> Quoi ?",
-      "<em class='character'> Titouan : </em> J'aimerais vivre ma vie, avoir la liberté de faire des choix.",
-      "<em class='character'> Titouan : </em> Je n'ai pu vivre ma vie comme je le voulais",
-      "<em class='character'> Titouan : </em> Je pars faire ma vie",
+      "<em class='character'> Steve : </em> J'aimerais vivre ma vie, avoir la liberté de faire des choix.",
+      "<em class='character'> Steve : </em> Je n'ai pu vivre ma vie comme je le voulais",
+      "<em class='character'> Steve : </em> Je pars faire ma vie",
       "<em class='narrator'> ...( notre conscience change totalement) </em>",
-      "<em class='narrator'> Titouan part pour partir loin, très loin, là où il peut se refaire une nouvelle vie </em>"
+      "<em class='narrator'> Steve part pour partir loin, très loin, là où il peut se refaire une nouvelle vie </em>"
     ],
     "next" : 12,
       "label" : "Je fais mes valises et je pars"
@@ -235,7 +235,7 @@
     "background" : "#4763B6",
     "sounds": "",
     "text": [
-      "<em class='narrateur'> Titouan a eu la bonne idée de mettre de côté 10% de son salaire durant toutes ces années chez Slave Computing. </em>",
+      "<em class='narrateur'> Steve a eu la bonne idée de mettre de côté 10% de son salaire durant toutes ces années chez Slave Computing. </em>",
       "<em class='narrateur'> Avec cet argent il a eu de quoi partir aux Philipines et se payer un mois de loyer grace a un job qu'il a trouvé dans un restaurant. ",
       "<em class='narrateur '> Il est désormais propriétaire de son propre établissement et coule des jours heureux avec sa femme...</em>"
     ],

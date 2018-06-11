@@ -50,7 +50,7 @@ class Story {
     for (let i=0; i <= obj.text.length - 1 ; i++) {
       output_txt.innerHTML += `<p class="Output__renderedText"> ${ obj.text[i] } </p>`
     }
-/*
+
     let timer = setInterval( () => {
       
       let currentTxt = document.querySelectorAll(".Output__renderedText")
@@ -108,32 +108,6 @@ class Story {
       }
       cursor++
     }, 3000)
-*/
-  }
-
-
-  scroll(up){
-    let currentTxt = document.querySelectorAll(".Output__renderedText")
-    let output_txt = document.querySelector('.Output__txt')
-    if(up){
-      console.log('up')
-      output_txt.scrollTop += (value)
-      return
-    }
-    console.log('down')
-    output_txt.scrollTop -= (value)
-    return
-  }
-
-  toggleControls(){
-    console.log('active controls');
-    document.getElementById('up').addEventListener('click', () => {
-      this.scroll(up)
-    })
-
-    document.getElementById('down').addEventListener('click', () => {
-      this.scroll()
-    })
 
   }
 
