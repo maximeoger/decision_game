@@ -1,0 +1,6 @@
+Amélioration du systee d'apparence des textes :
+
+- n'afficher les controles que lorsque l'histoire est lancée
+- arreter le défilement des textes lorsque l'on interragis avec les fleches ( ou gérer les controles de façon indépendante au scroll )
+- remplacer l'animation slideIn des textes par un fadeIn
+- revoir les tailles de typo pour le confort de lecture

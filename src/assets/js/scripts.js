@@ -43,17 +43,16 @@ class Story {
     let cursor = 0
     let next
     let nextBtn
-    let statement
 
-    output_txt.scrollTop = 0;
+    output_txt.scrollTop = 0
     console.log(output_txt.scrollTop)
 
     for (let i=0; i <= obj.text.length - 1 ; i++) {
-      statement = `<p class="Output__renderedText"> ${ obj.text[i] } </p>`
-      output_txt.innerHTML += statement
+      output_txt.innerHTML += `<p class="Output__renderedText"> ${ obj.text[i] } </p>`
     }
-
+/*
     let timer = setInterval( () => {
+      
       let currentTxt = document.querySelectorAll(".Output__renderedText")
       currentTxt[cursor].classList.add("--visible")
 
@@ -90,10 +89,10 @@ class Story {
           output_btns.innerHTML = `
             <button id="component-1" class="button button--1 Output__btn restartBtn">${obj.label}</button>
           `
-      document.querySelector('.restartBtn').addEventListener('click', () => {
-        this.clearOutput()
-        return this.showMenu()
-      })
+          document.querySelector('.restartBtn').addEventListener('click', () => {
+            this.clearOutput()
+            return this.showMenu()
+          })
 
         } else {
           output_btns.innerHTML = `
@@ -109,11 +108,11 @@ class Story {
       }
       cursor++
     }, 3000)
-
+*/
   }
 
 
-  scroll(up, value){
+  scroll(up){
     let currentTxt = document.querySelectorAll(".Output__renderedText")
     let output_txt = document.querySelector('.Output__txt')
     if(up){
