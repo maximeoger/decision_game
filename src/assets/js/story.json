@@ -3,36 +3,37 @@
   {
     "id": 0,
     "image" : "src/assets/img/closed_door.png",
-    "background" : "",
+    "background" : "#4763B6",
     "text": [
-      "<em class='narrator'> Voici Steve, 32 ans. un jeune homme sans histoire, bon élève et travaille dans une grande boîte </em>",
-      "<em class='narrator'> Là il attend sa mère je crois, il doit pleurer encore, je dis encore parce que là c’est le seul moment qu’il a “ juste à lui “ comme il dit, c’est parce que sa mère habite avec lui peut être. </em>",
-      "<em class='narrator'> Quel fils pleure à cause de sa mère ? </em>",
-      "<em class='narrator'> Bref..à mince j’ai oublié de me présenter je suis le narrateur bienvenue à toi dans l’histoire. Nous sommes et bien dans la tête de Steve, simple comme bonjour. <em>",
-      "<em class='character'>Steve :  </em>Dormons un peu, on a du boulot demain. "
+      "<em class='narrator'> Steve est un jeune homme ordinaire sans histoire particulière.</em>",
+      "<em class='narrator'> Bon élève, il a toujours cherché à donner le meilleur de lui même dans son travail.</em>",
+      "<em class='narrator'> Aujourd'hui notre héro à 32 ans et travaille comme employé ordinaire chez Slave Computing ...</em>",
+      "<em class='narrator'> Son métier conciste à appuyer sur le même bouton toute la journée </em>",
+      "<em class='narrator'> Et il vient de finir sa journée.<em>",
+      "<em class='character'>Steve :  </em> Quelle journée ! J'ai hate de rentrer et de regarder ma série"
     ],
     "next": 1,
-    "label" : "Au lit !"
+    "label" : "Rentrer à la maison"
   },
 
   {
     "id": 1,
     "image" : "src/assets/img/bed.png",
-    "background" : "",
+    "background" : "#4763B6",
     "sounds": "",
     "text": [
-      "<em class='narrator'> 7:00 - Le réveil sonne.. </em>",
-      "<em class='narrator'> Steve dort encore à poings fermés </em>",
+      "<em class='narrator'> * 7:00 - Le réveil sonne *</em>",
+      "<em class='narrator'> Steve dors encore, n'entend-il pas le réveil sonner ? </em>",
       "<em class='narrator'> Vite Steve doit se réveiller, ça sonne depuis 10min. </em>",
-      "<em class='character'> Steve :  </em>Mère risque encore de s'énerver. Le boulot commence à 11h aujourd’hui mais je pourrais me lever plus tôt pour faire bonnes impressions comme toujours"
+      "<em class='character'> Steve :  </em> 7:00 ? Le boulot ne commence qu'à 11h aujourd’hui."
     ],
     "choices": {
       "a": {
-        "label": "Se lever maintenant",
+        "label": "Se lever et arriver en avance",
         "next": 2
       },
       "b": {
-        "label": "Attendre 10h",
+        "label": "Dormir encore un peu",
         "next": 3
       }
     }
@@ -40,13 +41,12 @@
 
   {
     "id": 2,
-    "image" : "src/assets/img/windows.png",
-    "background" : "",
+    "image" : "src/assets/img/desk.png",
+    "background" : "#4763B6",
     "sounds": "",
     "text": [
-      "<em class='narrator'> En route pour Slave Computer où Steve bosse depuis maintenant 10 ans c’est toute sa vie </em>",
-      "<em class='narrator'> il doit à chaque fois donner le meilleur de soi-même pour se faire reconnaître, ah.. il fait beau aujourd’hui </em>",
-      "<em class='character'> Steve :  </em> Je vais au travail comment ?"
+      "<em class='narrator'> Steve est en route pour Slave Computing. Il y travaille depuis maintenant 10 ans, c'est pour ainsi dire 'toute sa vie' </em>",
+      "<em class='character'> Steve :  </em> Il fait beau aujourd'hui, je pourrais aller au travail à pieds pour changer"
     ],
     "choices": {
       "a": {
@@ -63,56 +63,59 @@
   {
     "id": 3,
     "image" : "src/assets/img/mom.png",
-    "background" : "",
+    "background" : "#4763B6",
     "sounds": "",
     "text": [
-      "<em class='character'> Steve :  </em> Je commence à 11h ça ne sert à rien d’arriver autant en avance.",
-      "<em class='character'> Mère :  </em> Il faut que tu partes tout de suite bon à rien ! Depeches toi abruti!",
+      "<em class='character'> Steve :  </em>Mais je commence à 11h, ça ne sert à rien d’arriver autant en avance.",
+      "<em class='character'> Mère :  </em> Il faut que tu partes tout de suite bon à rien ! Dépèches toi !",
       "<em class='character'> Steve :  </em> oui Mère..tout de suite mère.",
-      "<em class='narrator'> Ahlala l’histoire d’amour entre ces deux personnes qu’est ce que c’est beau. </em>"
+      "<em class='narrator'> Ce type de dialogue est devenu monnaie courrante au sein du foyer. </em>"
     ],
     "next": 4,
-    "label": "C'est parti"
+    "label": "Bon je dois y aller"
   },
 
   {
     "id": 4,
     "image" : "src/assets/img/boss.png",
-    "background" : "",
+    "background" : "#4763B6",
     "sounds": "",
 
     "text": [
-      "<em class='character'> Patron : </em> Qu’est ce que tu as foutu on t’attendait à la réunion tu n’étais pas là idiot !",
+      "<em class='character'> Patron : </em> Steve, quelle raison vous a permit de manquer la réunion de ce matin ?",
       "<em class='character'> Steve : </em> Je ne comprend pas vous m’avez dit hier que je commençais à 11h, je ne comprend pas",
-      "<em class='character'> Patron : </em> Je te préviens, c'est la dernière fois !"
+      "<em class='character'> Patron : </em> Je vous ai envoyé un mail cette nuit pour vous prévenir de l'importance de cette réunion, vous ne lisez pas vos mails ?",
+      "<em class='character'> Steve : </em> Si mais pas pendant la nuit",
+      "<em class='character'> Patron : </em> Me prennez-vous pour un idiot Steve ?",
+      "<em class='character'> Steve : </em> Non monsieur, jamais. Je dit juste que c'est important le sommeil",
+      "<em class='character'> Patron : </em> Un bon employé se doit de vouer corps et âme à son entreprise et même à travailler de nuit s'il le faut. Êtes-vous un bon employé Steve ?"
     ],
     "choices": {
       "a": {
-        "label": "Oui Patron",
+        "label": "Toutes mes excuses monsieur",
         "next": 5
       },
       "b": {
-        "label": "non ! je proteste !",
-        "next": 8
+        "label": "C'est du harcèlement moral !",
+        "next": 6
       }
     }
   },
 
   {
     "id": 5,
-    "image" : "src/assets/img/windows.png",
-    "background" : "",
+    "image" : "src/assets/img/desk.png",
+    "background" : "#4763B6",
     "sounds": "",
     "text": [
       "<em class='character'> Steve : </em> Bonjour tout le monde",
-      "<em class='character'> Patron : </em> Steve tu es à l’heure, bien viens en réunion ça va commencer.",
-      "<em class='character'> Steve : </em> Tiens une réunion on n’était pas au courant, bon allons-y.",
-      "<em class='narrator'> La réunion se passe…. </em>",
-      "<em class='character'> Patron : </em> Steve maintenant tu bosses, tu bosses jamais c’est dingue allez plus vite que ça.",
+      "<em class='character'> Patron : </em> Steve, vous êtes à l’heure, la réunion va commencer.",
+      "<em class='character'> Steve : </em> * Tiens une réunion on était pas au courant, bon allons-y. *",
+      "<em class='narrator'> La réunion se passe…</em>",
+      "<em class='character'> Patron : </em> Au travail maintenant, et tâchez de vous montrer plus productif que ces 10 dernières années Steve",
       "<em class='character'> Steve : </em> Oui patron. Tout de suite patron.",
-      "<em class='narrator'> Aaaah encore une bonne journée en perspective non ? Allez on fait ce que le boss à dit allez..  </em>",
-      "<em class='narrator'> Toute la journée Steve travaille.. il finit toute ces journées à 22h.</em> ",
-      "<em class='narrator' > Sa vie est modeste mais elle ne changera pas...n’est-ce pas ? </em>"
+      "<em class='narrator'> Une journée habituelle en perspective </em>",
+      "<em class='narrator'> Toute la journée Steve travaille... jusqu'à 22h !</em> "
     ],
     "next": 1,
     "label" : "On rentre à la maison"
@@ -121,22 +124,22 @@
   {
     "id": 6,
     "image" : "src/assets/img/boss.png",
-    "background" : "",
+    "background" : "#4763B6",
     "sounds": "",
     "text": [
       "<em class='character'> Patron : </em> pardon ? vous vous moquez de moi ?",
       "<em class='character'> Steve : </em> Vous m’avez entendu, je n’ai rien à me reprocher, c’est très simple.",
-      "<em class='character'> Patron : </em> je ne vous permet pas de me parler comme ça.",
-      "<em class='character'> Steve : </em> Alors mais allez vous ###***###***###***",
-      "<em class='narrator' > Quoiiiiii ? Qu’est ce que Steve a fait. On est foutu, foutu… Il faut s’excuser on ne peut pas faire ça… </em>"
+      "<em class='character'> Patron : </em> Je ne vous permet pas de me parler comme ça. Des dizaines de personnes sont prêtes à prendre votre place vous savez ?",
+      "<em class='character'> Steve : </em> Et bien je suis prêt à leur laisser ma place alors !",
+      "<em class='narrator' > Quoiiiiii ? Qu’est ce que Steve a fait ?! Il faut s’excuser on ne peut pas faire ça… </em>"
     ],
     "choices": {
       "a": {
-        "label": "Je me suis emporté",
+        "label": "Pardon, Je me suis emporté",
         "next": 7
       },
       "b": {
-        "label": "Je me casse",
+        "label": "Je me casse !",
         "next": 8
       }
     }
@@ -146,28 +149,27 @@
     "id": 7,
     "ending": false,
     "image" : "src/assets/img/boss.png",
-    "background" : "",
+    "background" : "#4763B6",
     "sounds": "",
     "text": [
-      "<em class='character'> Patron : </em> C'est ce que je préfère, toi je vais faire en sorte que tu souffres, c'est un affront que tu me fais.",
-      "<em class='character'> Steve : </em> Je suis désolé, je ne sais pas ce qu'il s'est passé..",
-      "<em class='narrator' > ça y est Steve pleure..on aurait jamais du faire ça, tout est de sa faute ! </em>",
-      "<em class='character'> Patron : </em> Vas voir la secrétaire, je te garde mais tu feras que les cafés et le ménage, ça sera ta punition pour m'avoir parlé comme ça !",
-      "<em class='narrator' > On est obligé d'accepter..Tout est de ta faute </em>"
+      "<em class='character'> Patron : </em> J'accepte vos excuses, mais je vais faire en sorte que vous souffriez",
+      "<em class='character'> Patron : </em> Puisque vous tennez tant à rester, vous prendrez la place de Jasper qui s'occupait du ménage",
+      "<em class='character'> Patron : </em> Il a eu le cran de partir la semaine dernière lui. Les bureaux commencent à devenir sale",
+      "<em class='narrator' > C'est un avenir moins prometeur qui s'offre à lui, mais c'est mieux que rien </em>
     ],
     "next": 999,
-    "label": "d'accord"
+    "label": "Merci de me garder Monsieur"
   },
   
   {
     "id": 8,
     "image" : "src/assets/img/messy_desk.png",
-    "background" : "",
+    "background" : "#4763B6",
     "ending" : false,
     "background" : "",
     "sounds" : "",
     "text" : [
-      "Je me casse !"
+      "<em class='character'> Steve :  </em> Oui vous m'avez entendu ! Je ne veux plus travailler pour vous, vous n'êtes qu'un monstre égoïste qui ne pense pas au bien être de ses employés !"
     ],
     "next": 9,
     "label" : "Je me casse !"
@@ -177,7 +179,7 @@
     "id": 9,
     "ending" : false,
     "image" : "src/assets/img/mom.png",
-    "background" : "",
+    "background" : "#4763B6",
     "sounds" : "",
     "text" : [
       "<em class='character'> Mère : </em> tu t'es fait virer ! t'es vraiment un gros naze !",
@@ -194,7 +196,7 @@
     "id": 10,
     "ending": true,
     "image" : "src/assets/img/cashier.png",
-    "background" : "",
+    "background" : "#4763B6",
     "sounds": "",
     "text": [
       "<em class='character'> Steve : </em> Mère.. je ferais tout pour toi, je trouve un autre boulot et on pourra manger.",
@@ -208,20 +210,34 @@
 
   {
     "id": 11,
-    "ending": true,
+    "ending": false,
     "image" : "src/assets/img/night.png",
-    "background" : "",
+    "background" : "#4763B6",
     "sounds": "",
     "text": [
       "<em class='character'> Steve : </em> Mère, tu arrêtes ! arrêtes de me traiter de bon à rien ! ",
       "<em class='character'> Steve : </em> Arrêtes de m'insulter tout les jours ! Arrêtes de dire ce que je dois faire !",
       "<em class='character'> Mère : </em> Quoi ?",
       "<em class='character'> Steve : </em> J'aimerais vivre ma vie, avoir la liberté de faire des choix.",
-      "<em class='character'> Steve : </em> Je n'ai pu vivre ma vie comme je la voulais",
-      "<em class='character'> Steve : </em> Je pars Mère, pour toujours..Au revoir",
+      "<em class='character'> Steve : </em> Je n'ai pu vivre ma vie comme je le voulais",
+      "<em class='character'> Steve : </em> Je pars faire ma vie",
       "<em class='narrator'> ...( notre conscience change totalement) </em>",
-      "<em class='narrator'> Steve part pour partir loin, très loin, là où il peut se refaire une nouvelle vie </em>",
-      "Vous avez terminé, Bravo !"
+      "<em class='narrator'> Steve part pour partir loin, très loin, là où il peut se refaire une nouvelle vie </em>"
+    ],
+    "next" : 12,
+      "label" : "Je fais mes valises et je pars"
+  },
+
+  {
+    "id": 12,
+    "ending": false,
+    "image" : "src/assets/img/happy.png",
+    "background" : "#4763B6",
+    "sounds": "",
+    "text": [
+      "<em class='narrateur'> Steve a eu la bonne idée de mettre de côté 10% de son salaire durant toutes ces années chez Slave Computing. </em>",
+      "<em class='narrateur'> Avec cet argent il a eu de quoi partir aux Philipines et se payer un mois de loyer grace a un job qu'il a trouvé dans un restaurant. ",
+      "<em class='narrateur '> Il est désormais propriétaire de son propre établissement et coule des jours heureux avec sa femme...</em>"
     ],
     "next" : 999,
       "label" : "Trop bien !"
@@ -230,7 +246,7 @@
   {
     "id": 999,
     "image" : "src/assets/img/yeah.png",
-    "background" : "",
+    "background" : "#4763B6",
     "ending": true,
     "text": [
       "La partie s'arrête ici. N'hésitez pas à recommencer pour débloquer les deux autres fins !",

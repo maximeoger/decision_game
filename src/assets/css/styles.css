@@ -68,7 +68,8 @@ table {
   border-spacing: 0; }
 
 body {
-  background: #4763b6; }
+  background: #4763b6;
+  transition: all ease-out .4s; }
 
 .Game {
   height: 100vh;
@@ -96,21 +97,28 @@ body {
   .Game__btn {
     margin-top: 50px; }
   .Game__img {
-    height: 200px; }
+    height: 350px; }
   .Game__mainMenu {
     position: absolute;
     z-index: 999;
     text-align: center; }
   .Game__soundBtn {
     border: none;
-    background-color: none;
-    border-radius: 0px; }
+    background: none;
+    border-radius: 0px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 42px;
+    height: 42px;
+    color: #ffffff;
+    cursor: pointer; }
+  .Game__soundBtn:focus {
+    outline: 0; }
 
 .Output {
-  color: #ffffff;
-  width: 100%; }
+  color: #ffffff; }
   .Output__renderedChoicesBox {
-    width: 100%;
     display: flex;
     justify-content: space-around; }
   .Output__txt {
@@ -124,7 +132,7 @@ body {
     position: relative; }
     @media (min-width: 770px) {
       .Output__txt {
-        padding: 0 150px; } }
+        padding: 0 100px; } }
   .Output__renderedText {
     padding: 50px 0;
     opacity: 0;
@@ -141,6 +149,31 @@ body {
     background: none;
     font-family: "Oswald-Regular";
     font-size: 16px; }
+
+.RenderBox {
+  display: flex;
+  justify-content: center; }
+  .RenderBox__container {
+    display: flex;
+    width: 100%; }
+    @media (min-width: 770px) {
+      .RenderBox__container {
+        width: 70%; } }
+
+.Controls {
+  padding: 20px 0;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 148px;
+  width: 32px; }
+  .Controls__icon {
+    cursor: pointer;
+    font-size: 24px;
+    opacity: 0.5;
+    transition: all ease-out 0.2s; }
+  .Controls__icon:hover {
+    opacity: 1; }
 
 .--visible {
   opacity: 1; }

@@ -1,7 +1,10 @@
 class Story {
 
   constructor() {
+    fetch('./src/assets/audio/P  Lewis - patterns.mp3')
+    .then((response) => console.log(response))
     this.startGame()
+    this.toggleControls()
   }
 
   // démarre le jeu
@@ -13,6 +16,7 @@ class Story {
     });
   }
 
+  
   // appel fetch pour récupérer les données dans le story.json
   getData() {
     fetch('./src/assets/js/story.json')
@@ -31,32 +35,32 @@ class Story {
 
   // reçois le fichier JSON (data), l'index d'un objet correspondant à une situation (obj) et affiche les données dans le dom
   render(data, obj) {
-    document.querySelector('body').style.backgroundColor = obj.color
+    document.querySelector('body').style.background = obj.background
+    console.log(document.querySelector('body').style.background)
     document.querySelector('.Game__img').setAttribute("src", obj.image)
     let output_txt = document.querySelector('.Output__txt')
     let output_btns = document.querySelector(".Output__btnsContainer")
     let cursor = 0
     let next
     let nextBtn
-    let statement
 
-    output_txt.scrollTop = 0;
+    output_txt.scrollTop = 0
+    console.log(output_txt.scrollTop)
+
     for (let i=0; i <= obj.text.length - 1 ; i++) {
-      statement = `<p class="Output__renderedText"> ${ obj.text[i] } </p>`
-      output_txt.innerHTML += statement
+      output_txt.innerHTML += `<p class="Output__renderedText"> ${ obj.text[i] } </p>`
     }
 
     let timer = setInterval( () => {
+      
       let currentTxt = document.querySelectorAll(".Output__renderedText")
       currentTxt[cursor].classList.add("--visible")
 
       
       if(cursor >= 1){
         output_txt.scrollTop += (currentTxt[cursor].clientHeight)
-      console.log(currentTxt[cursor].clientHeight)
       }
       
-
       if(cursor === obj.text.length - 1){
         clearInterval(timer)
 
@@ -64,31 +68,8 @@ class Story {
 
           output_btns.innerHTML = `
           <div class="Output__renderedChoicesBox">
-
-              <button data-choice="a" id="component-1" class="button button--1 Output__btn startBtn">
-              ${obj.choices.a.label}
-              <span class="button__container">
-                <span class="circle top-left"></span>
-                <span class="circle top-left"></span>
-                <span class="circle top-left"></span>
-                <span class="button__bg"></span>
-                <span class="circle bottom-right"></span>
-                <span class="circle bottom-right"></span>
-                <span class="circle bottom-right"></span>
-              </span>
-            </button>
-            <button data-choice="b" id="component-1" class="button button--1 Output__btn startBtn">
-            ${obj.choices.b.label}
-            <span class="button__container">
-              <span class="circle top-left"></span>
-              <span class="circle top-left"></span>
-              <span class="circle top-left"></span>
-              <span class="button__bg"></span>
-              <span class="circle bottom-right"></span>
-              <span class="circle bottom-right"></span>
-              <span class="circle bottom-right"></span>
-            </span>
-          </button>
+              <button data-choice="a" id="component-1" class="button button--1 Output__btn startBtn">${obj.choices.a.label}</button>
+              <button data-choice="b" id="component-1" class="button button--1 Output__btn startBtn">${obj.choices.b.label}</button>
           </div>
           `
           document.querySelector('.Output__btn[data-choice="a"]').addEventListener('click', () => {
@@ -106,38 +87,16 @@ class Story {
         }else if (obj.ending===true) {
 
           output_btns.innerHTML = `
-            <button id="component-1" class="button button--1 Output__btn restartBtn">
-            ${obj.label}
-            <span class="button__container">
-              <span class="circle top-left"></span>
-              <span class="circle top-left"></span>
-              <span class="circle top-left"></span>
-              <span class="button__bg"></span>
-              <span class="circle bottom-right"></span>
-              <span class="circle bottom-right"></span>
-              <span class="circle bottom-right"></span>
-            </span>
-          </button>
-        `
-      document.querySelector('.restartBtn').addEventListener('click', () => {
-        this.clearOutput()
-        return this.showMenu()
-      })
+            <button id="component-1" class="button button--1 Output__btn restartBtn">${obj.label}</button>
+          `
+          document.querySelector('.restartBtn').addEventListener('click', () => {
+            this.clearOutput()
+            return this.showMenu()
+          })
 
         } else {
           output_btns.innerHTML = `
-          <button id="component-1" class="button button--1 Output__btn nextBtn">
-              ${obj.label}
-              <span class="button__container">
-                <span class="circle top-left"></span>
-                <span class="circle top-left"></span>
-                <span class="circle top-left"></span>
-                <span class="button__bg"></span>
-                <span class="circle bottom-right"></span>
-                <span class="circle bottom-right"></span>
-                <span class="circle bottom-right"></span>
-              </span>
-            </button>
+            <button id="component-1" class="button button--1 Output__btn nextBtn">${obj.label}</button>
           `
           document.querySelector('.nextBtn').addEventListener('click', () => {
             this.clearOutput()
@@ -154,6 +113,7 @@ class Story {
 
   showMenu() {
     document.querySelector('.Game__mainMenu').style.display = ""
+    document.querySelector('.Game__img').setAttribute("src", "")
   }
 
   getNextStep(data, next){
@@ -165,6 +125,7 @@ class Story {
   }
 }
 
+
 class Audio {
 
   constructor(){
@@ -173,29 +134,25 @@ class Audio {
 
   toggleSound(){
     let audioBtn = document.querySelector('.Game__soundBtn');
+    let icon = document.getElementById('soundIcon');
+    let audio = document.querySelector('.Game__music');
+
     audioBtn.addEventListener('click', () => {
-      this.mute()
+
+      if(audio.muted === true) {
+        audio.muted = false;
+        icon.classList.add('fa-volume-up')
+        icon.classList.remove('fa-volume-off')
+      }else{
+        audio.muted = true;
+        icon.classList.remove('fa-volume-up')
+        icon.classList.add('fa-volume-off')
+      }
+
     })
   }
 
-  mute(){
-    let audio = document.querySelector('.Game__music')
-
-    if(audio.muted === true) {
-      audio.muted = false;
-      console.log(audio.muted)
-    }else{
-      audio.muted = true;
-      console.log(audio.muted)
-    }
-    
-  }
 }
 
-class Loader {
-
-}
-
-let loader = new Loader()
 let audio = new Audio()
 let story = new Story()
